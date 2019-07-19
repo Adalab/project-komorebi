@@ -1,0 +1,27 @@
+.design {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+
+  &__title {
+      margin: 27px 204px 25px 51px;
+  }
+
+  &__subtitle {
+      margin: 0;
+      padding-left: 39px;
+  }
+}
+
+.design__form {
+    display: flex;
+    justify-content: space-between; 
+
+    &--items {
+        display: flex;
+        flex-direction: column;
+        padding-top: 
+        padding-right: 183px;
+    }
+}
+
