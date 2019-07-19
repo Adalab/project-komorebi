@@ -1,0 +1,59 @@
+.header {
+  background-color: $background-landing;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  &__img {
+    margin-top: 95px;
+    margin-bottom: 35.4px;
+    max-width: 250px;
+  }
+
+  &__title {
+    color: $dull-orange;
+    font-family: $fontLanding;
+    font-size: 19.2px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  &__text {
+    color: $dark-green-blue;
+    font-family: $fontMain;
+    font-size: 12.8px;
+    text-align: center;
+    margin-bottom: 17.8px;
+  }
+
+  &__description {
+    border: solid 1px rgba($dull-orange, 0.21);
+    border-radius: 4px;
+    height: 73.8px;
+    width: 100%;
+    margin-bottom: 38.6px;
+  }
+
+  &__btn {
+    width: 129px;
+    height: 42px;
+    background-color: $dirty-blue;
+    border-radius: 21px;
+    margin-bottom: 30px;
+    border-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: $fontMain;
+    font-weight: 600;
+  }
+}
