@@ -175,8 +175,8 @@
     justify-content: center;
     align-items: center;
     width: 90vw;
-    border-top: 1px solid #d8d8d8;
-    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid $borderLine;
+    border-bottom: 1px solid $borderLine;
   }
 
   &__title {
@@ -199,7 +199,7 @@
     justify-content: center;
     align-items: center;
     width: 90vw;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $borderLine;
     margin-bottom: 31px;
   }
 

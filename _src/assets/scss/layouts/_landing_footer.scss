@@ -3,9 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: solid 1px $borderLine;
+
+  @media all and (min-width: $tabletSize) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px 40px 0 40px;
+  }
 
   &__product-signature {
     margin-bottom: 12px;
+    padding-top: 18px;
     font-family: $fontMain;
     font-size: 14px;
     color: #6b6b6b;
@@ -14,15 +24,5 @@
   &__logo {
     height: 40px;
     margin-bottom: 20px;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 0 40px 0 40px;
   }
 }
