@@ -1,9 +1,25 @@
 <h2 class="tittle">Rellena</h2>
-Nombre completo (full_name)
+<!-- Nombre completo (full_name)
 Profesión (desarrolladora front-end ;) (job)
 Datos personales
 Teléfono (phone)
 Correo electrónico (email)
 RRSS
 LinkedIn (linkedin)
-GitHub (github)
+GitHub (github) -->
+
+<form action="/signup" method="post">
+  <label for="fullName">Nombre completo</label>
+  <input placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName" />
+  <label for="profession">Puesto</label>
+  <input placeholder="Ej: Front-end unicorn" id="profession" type="text" name="profession" />
+  <input type="submit" value="Añadir imágen" />
+  <label for="emailAddress">Correo electrónico</label>
+  <input placeholder="Ej: sally-hill@gmail.com" type="email" id="emailAddress" name="emailAddress" />
+  <label for="telephone">Teléfono</label>
+  <input placeholder="Ej: 555-55-55-55" type="tel" id="telephone" name="telephone" />
+  <label for="Linkedin">Linkedin</label>
+  <input placeholder="Ej: linkedin.com/in/sally.hill" id="Linkedin" type="text" name="Linkedin" />
+  <label for="Github">Github</label>
+  <input placeholder="Ej: @sally-hill" type="email" id="Github" name="Github" />
+</form>
