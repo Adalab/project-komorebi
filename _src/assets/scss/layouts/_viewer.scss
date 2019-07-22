@@ -1,0 +1,38 @@
+.viewer{
+    &__header{
+        min-width: 320px;
+        height: 111px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo{
+       width: 201px;
+       height: 50px;
+    }
+    &__container{
+        height: 457px;
+        background: linear-gradient(#bfcdd0, #dde9ed);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__buttom{
+        width: 75px;
+        height: 30px;
+        border-radius: 20px;
+        background: red;
+        border: 2px solid white;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image-container{
+        width: 240px;
+        height: 329px;
+        background: white;
+    }
+}
