@@ -28,14 +28,14 @@
 }
 
 .fa-edit {
-    margin-left: 41px; 
-    color: $dull-orange;
+  margin-left: 41px;
+  color: $dull-orange;
 }
 
 .fa-chevron-up {
-    font-size: 20px;
-    padding-right: 50px;
-    color: $secondary-color;
+  font-size: 20px;
+  padding-right: 50px;
+  color: $secondary-color;
 }
 
 .design__form {
@@ -142,7 +142,7 @@
   &__three--five {
     height: 25px;
     width: 30px;
-    background-color: $light-orange ;
+    background-color: $light-orange;
   }
 
   &__one--six {
@@ -163,7 +163,6 @@
   }
 }
 
-
 .folded__menu {
   display: flex;
   flex-direction: column;
@@ -171,14 +170,13 @@
 }
 
 .form {
-  
   &__box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90vw;
-    border-top: 2px solid #f5f5f5;
-    border-bottom: 2px solid #f5f5f5;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
   }
 
   &__title {
@@ -191,18 +189,18 @@
 }
 
 .fa-keyboard {
-    margin-left: 31px; 
-    color: $dull-orange;
+  margin-left: 31px;
+  color: $dull-orange;
 }
 
 .share {
-
   &__box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90vw;
-    border-bottom: 2px solid #f5f5f5;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 31px;
   }
 
   &__title {
@@ -215,12 +213,12 @@
 }
 
 .fa-share-alt {
-    margin-left: 31px; 
-    color: $dull-orange;
+  margin-left: 31px;
+  color: $dull-orange;
 }
 
 .fa-chevron-down {
-    font-size: 20px;
-    padding-right: 50px;
-    color: $secondary-color;
+  font-size: 20px;
+  padding-right: 50px;
+  color: $secondary-color;
 }
