@@ -34,5 +34,19 @@
         width: 240px;
         height: 329px;
         background: white;
+
     }
+
+    &__image-title{
+        display:flex;
+        flex-direction: row;
+        background: lightcoral;
+    }
+
+    &__image-line{
+        width: 5px;
+        height: 42px;
+        background: $dirty-blue;
+    }
+    &__image-name
 }
