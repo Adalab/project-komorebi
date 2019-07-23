@@ -1,9 +1,14 @@
-<h2 class="tittle">Rellena</h2>
+<section class="folded__menu">
+  <div class="form__box">
+    <i class="far fa-keyboard"></i>
+    <h2 class="form__title">RELLENA</h2>
+    <i class="fas fa-angle-down fa-angle-down--design"></i>
+  </div>
 
-<div class="form">
-  <form action="/signup" method="post">
-    <label for="fullName">Nombre completo</label>
-    <input placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName" />
+
+  <form action="/signup" method="post" class="folded__form">
+    <label for="fullName" class="folded__form__label">Nombre completo</label>
+    <input placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName" class="folded__form__input" />
     <label for="profession">Puesto</label>
     <input placeholder="Ej: Front-end unicorn" id="profession" type="text" name="profession" />
     <input type="submit" value="Añadir imágen" />
@@ -16,4 +21,5 @@
     <label for="Github">Github</label>
     <input placeholder="Ej: @sally-hill" type="email" id="Github" name="Github" />
   </form>
-</div>
+
+</section>
