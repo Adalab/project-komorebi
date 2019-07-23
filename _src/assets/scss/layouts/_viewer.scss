@@ -10,6 +10,8 @@
     &__logo{
        width: 201px;
        height: 50px;
+       background-image: url("../images/awesome.svg");
+       background-size: cover;
     }
     &__container-background{
         height: 457px;
@@ -40,7 +42,7 @@
         font-family: $fontMain;
         font-size: 12px;
         line-height: 20px;
-        color: #54585a; /*PONER VARIABLE*/
+        color: $secondary-color; 
     }
 
     &__image-container{
@@ -76,7 +78,7 @@
         font-weight: 500;
         line-height: 20px;
         font-size: 16px;
-        color: #54585a; /*PONER VARIABLE*/
+        color: $secondary-color; 
         margin: 0;
         padding-left: 20px;
         padding-top:2px;
@@ -84,9 +86,8 @@
     &__profile-picture{
         width: 240px;
         height: 200px;
-        background-image: url("/public/assets/images/natalie-portman.jpg");
+        background-image: url("../images/natalie-portman.jpg");
         background-size: cover;
-        background: lightgreen;
     }
 
     &__icons{
@@ -100,12 +101,28 @@
         height: 32px;
         border-radius: 40px;
         border: 2px solid $hospital-green;
-        margin: 0px 5px 0px 5px;;
+        margin: 0px 5px 0px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-.fa .fa-trash-o{
-    height: 20px;
-    width: 11px;
-    color: blue;
+.fa-trash-alt{
+    font-size: 12px;
+    color: $secondary-color;
+    margin-right: 10px;
+}
+.fa-mobile-alt{
+    color: $secondary-color;
+    
+}
+.fa-envelope{
+    color: $secondary-color;
+}
+.fa-linkedin-in{
+    color: $secondary-color;
+}
+.fa-github-alt{
+    color: $secondary-color;
 }

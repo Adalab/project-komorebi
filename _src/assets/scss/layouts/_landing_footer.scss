@@ -20,7 +20,12 @@
     font-size: 14px;
     color: #6b6b6b;
     opacity: 0.5;
+
+    @media all and (min-width: $tabletSize) {
+      padding-top: 0;
+    }
   }
+
   &__logo {
     height: 40px;
     margin-bottom: 20px;
