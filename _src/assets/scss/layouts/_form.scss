@@ -1,0 +1,99 @@
+.folded__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    border-top: 1px solid $borderLine;
+  }
+
+  &__title {
+    margin: 10px 155px 7px 10px;
+    font-family: $fontMain;
+    font-weight: bold;
+    color: $secondary-color;
+    font-size: 18px;
+  }
+}
+
+.fa-keyboard--design {
+  margin-left: 31px;
+  color: $dull-orange;
+}
+
+.share {
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    border-bottom: 1px solid $borderLine;
+    margin-bottom: 31px;
+  }
+
+  &__title {
+    margin: 10px 137px 7px 10px;
+    font-family: $fontMain;
+    font-weight: bold;
+    color: $secondary-color;
+    font-size: 18px;
+  }
+}
+
+.fa-angle-down--design {
+  font-size: 20px;
+  padding-right: 50px;
+  color: $secondary-color;
+}
+
+.folded__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__label {
+    font-family: $fontMain;
+    color: $dark-green-blue;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  &__input {
+    border: $hospital-green solid 1px;
+    height: 30px;
+    width: 281px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+  }
+
+  &__btnLine {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__btnAddImage {
+    margin-bottom: 7px;
+    height: 30px;
+    width: 140px;
+    background-color: $dull-orange;
+  }
+  &__btnText {
+    font-family: $fontMain;
+    font-size: 14px;
+    color: white;
+  }
+
+  &__btnClickBox {
+    border: $hospital-green solid 1px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 7px;
+  }
+}
