@@ -1,0 +1,103 @@
+.color {
+  &__one--one {
+    margin-left: 10px;
+    height: 25px;
+    width: 30px;
+    background-color: $dark-green-blue;
+  }
+  &__two--one {
+    height: 25px;
+    width: 30px;
+    background-color: $dirty-blue;
+  }
+  &__three--one {
+    height: 25px;
+    width: 30px;
+    background-color: $hospital-green;
+  }
+
+  &__one--two {
+    margin-left: 10px;
+    height: 25px;
+    width: 30px;
+    background-color: $maroon;
+  }
+  &__two--two {
+    height: 25px;
+    width: 30px;
+    background-color: $dirty-red;
+  }
+  &__three--two {
+    height: 25px;
+    width: 30px;
+    background-color: $dark-orange;
+  }
+
+  &__one--three {
+    margin-left: 10px;
+    height: 25px;
+    width: 30px;
+    background-color: $dark-green;
+  }
+  &__two--three {
+    height: 25px;
+    width: 30px;
+    background-color: $yellow-mustard;
+  }
+  &__three--three {
+    height: 25px;
+    width: 30px;
+    background-color: $pale-blue;
+  }
+
+  &__one--four {
+    margin-left: 10px;
+    height: 25px;
+    width: 30px;
+    background-color: $blue-jean;
+  }
+  &__two--four {
+    height: 25px;
+    width: 30px;
+    background-color: $greenish-grey;
+  }
+  &__three--four {
+    height: 25px;
+    width: 30px;
+    background-color: $light-yellow;
+  }
+
+  &__one--five {
+    margin-left: 10px;
+    height: 25px;
+    width: 30px;
+    background-color: $dark-red;
+  }
+  &__two--five {
+    height: 25px;
+    width: 30px;
+    background-color: $pale-purple;
+  }
+  &__three--five {
+    height: 25px;
+    width: 30px;
+    background-color: $light-orange;
+  }
+
+  &__one--six {
+    margin-left: 10px;
+    height: 25px;
+    width: 30px;
+    background-color: $dark-violet;
+  }
+  &__two--six {
+    height: 25px;
+    width: 30px;
+    background-color: $medium-purple;
+  }
+  &__three--six {
+    height: 25px;
+    width: 30px;
+    background-color: $light-purple;
+  }
+}
