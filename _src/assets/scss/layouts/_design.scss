@@ -3,25 +3,27 @@
   flex-direction: column;
   align-items: center;
   background: linear-gradient(#f5f5f5, #ffffff);
-  padding: 51px;
+  padding-left: 20px;
 
   &__box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: red;
   }
 
   &__title {
-    margin: 27px 168px 25px 10px;
+    margin: 10px 168px 25px 10px;
     font-family: $fontMain;
     font-weight: bold;
     color: $secondary-color;
     font-size: 18px;
+    background-color: blue;
   }
 
   &__subtitle {
-    margin: 10px 72px 132px 39px;
+    margin: 19px 72px 132px 39px;
     font-family: $fontMain;
     color: $secondary-color;
     font-size: 14px;
@@ -29,13 +31,11 @@
 }
 
 .fa-object-ungroup--design {
-  margin-left: 41px;
   color: $dull-orange;
 }
 
 .fa-angle-up--design {
   font-size: 20px;
-  padding-right: 50px;
   color: $secondary-color;
 }
 
@@ -60,109 +60,7 @@
   padding: 10px;
 }
 
-.color {
-  &__one--one {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $dark-green-blue;
-  }
-  &__two--one {
-    height: 25px;
-    width: 30px;
-    background-color: $dirty-blue;
-  }
-  &__three--one {
-    height: 25px;
-    width: 30px;
-    background-color: $hospital-green;
-  }
-
-  &__one--two {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $maroon;
-  }
-  &__two--two {
-    height: 25px;
-    width: 30px;
-    background-color: $dirty-red;
-  }
-  &__three--two {
-    height: 25px;
-    width: 30px;
-    background-color: $dark-orange;
-  }
-
-  &__one--three {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $dark-green;
-  }
-  &__two--three {
-    height: 25px;
-    width: 30px;
-    background-color: $yellow-mustard;
-  }
-  &__three--three {
-    height: 25px;
-    width: 30px;
-    background-color: $pale-blue;
-  }
-
-  &__one--four {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $blue-jean;
-  }
-  &__two--four {
-    height: 25px;
-    width: 30px;
-    background-color: $greenish-grey;
-  }
-  &__three--four {
-    height: 25px;
-    width: 30px;
-    background-color: $light-yellow;
-  }
-
-  &__one--five {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $dark-red;
-  }
-  &__two--five {
-    height: 25px;
-    width: 30px;
-    background-color: $pale-purple;
-  }
-  &__three--five {
-    height: 25px;
-    width: 30px;
-    background-color: $light-orange;
-  }
-
-  &__one--six {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $dark-violet;
-  }
-  &__two--six {
-    height: 25px;
-    width: 30px;
-    background-color: $medium-purple;
-  }
-  &__three--six {
-    height: 25px;
-    width: 30px;
-    background-color: $light-purple;
-  }
-}
+@import "design-colors";
 
 .folded__menu {
   display: flex;
@@ -195,4 +93,7 @@
 }
 
 @media all and (min-width: 768px) {
+  .design {
+    padding: 40px;
+  }
 }
