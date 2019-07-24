@@ -33,7 +33,7 @@
 }
 
 .fa-angle-up--design {
-  /*   font-size: 20px; */
+  font-size: 20px;
   color: $secondary-color;
 }
 
@@ -58,109 +58,7 @@
   padding: 10px;
 }
 
-.color {
-  &__one--one {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $dark-green-blue;
-  }
-  &__two--one {
-    height: 25px;
-    width: 30px;
-    background-color: $dirty-blue;
-  }
-  &__three--one {
-    height: 25px;
-    width: 30px;
-    background-color: $hospital-green;
-  }
-
-  &__one--two {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $maroon;
-  }
-  &__two--two {
-    height: 25px;
-    width: 30px;
-    background-color: $dirty-red;
-  }
-  &__three--two {
-    height: 25px;
-    width: 30px;
-    background-color: $dark-orange;
-  }
-
-  &__one--three {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $dark-green;
-  }
-  &__two--three {
-    height: 25px;
-    width: 30px;
-    background-color: $yellow-mustard;
-  }
-  &__three--three {
-    height: 25px;
-    width: 30px;
-    background-color: $pale-blue;
-  }
-
-  &__one--four {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $blue-jean;
-  }
-  &__two--four {
-    height: 25px;
-    width: 30px;
-    background-color: $greenish-grey;
-  }
-  &__three--four {
-    height: 25px;
-    width: 30px;
-    background-color: $light-yellow;
-  }
-
-  &__one--five {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $dark-red;
-  }
-  &__two--five {
-    height: 25px;
-    width: 30px;
-    background-color: $pale-purple;
-  }
-  &__three--five {
-    height: 25px;
-    width: 30px;
-    background-color: $light-orange;
-  }
-
-  &__one--six {
-    margin-left: 10px;
-    height: 25px;
-    width: 30px;
-    background-color: $dark-violet;
-  }
-  &__two--six {
-    height: 25px;
-    width: 30px;
-    background-color: $medium-purple;
-  }
-  &__three--six {
-    height: 25px;
-    width: 30px;
-    background-color: $light-purple;
-  }
-}
+@import "design-colors";
 
 .folded__menu {
   display: flex;
@@ -190,36 +88,6 @@
 .fa-keyboard--design {
   margin-left: 31px;
   color: $dull-orange;
-}
-
-.share {
-  &__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    border-bottom: 1px solid $borderLine;
-    margin-bottom: 31px;
-  }
-
-  &__title {
-    margin: 10px 137px 7px 10px;
-    font-family: $fontMain;
-    font-weight: bold;
-    color: $secondary-color;
-    font-size: 18px;
-  }
-}
-
-.fa-share-alt--design {
-  margin-left: 31px;
-  color: $dull-orange;
-}
-
-.fa-angle-down--design {
-  font-size: 20px;
-  padding-right: 50px;
-  color: $secondary-color;
 }
 
 @media all and (min-width: 768px) {
