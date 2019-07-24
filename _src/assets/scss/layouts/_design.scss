@@ -10,20 +10,18 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: red;
   }
 
   &__title {
-    margin: 10px 168px 25px 10px;
+    margin: 27px 158px 22px 10px;
     font-family: $fontMain;
     font-weight: bold;
     color: $secondary-color;
     font-size: 18px;
-    background-color: blue;
   }
 
   &__subtitle {
-    margin: 19px 72px 132px 39px;
+    margin: 0 62px 132px 19px;
     font-family: $fontMain;
     color: $secondary-color;
     font-size: 14px;
@@ -94,6 +92,8 @@
 
 @media all and (min-width: 768px) {
   .design {
-    padding: 40px;
+    &__box {
+      padding: 40px;
+    }
   }
 }
