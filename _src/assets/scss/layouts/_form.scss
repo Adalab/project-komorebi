@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px 0 20px;
 }
 
 .form {
@@ -11,8 +12,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid $borderLine;
-    margin-bottom: 25px;
-    padding: 0 20px 0 20px;
+    margin-bottom: 15px;
   }
 
   &__box__position {
@@ -41,6 +41,7 @@
 }
 
 .folded__form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -55,7 +56,7 @@
   &__input {
     border: $hospital-green solid 1px;
     height: 30px;
-    width: 281px;
+    width: 100%;
     margin-bottom: 20px;
     padding-left: 5px;
   }
