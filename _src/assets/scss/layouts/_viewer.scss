@@ -1,124 +1,132 @@
-.viewer{
-    &__header{
-        min-width: 320px;
-        height: 111px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    &__logo{
-       width: 201px;
-       height: 50px;
-       background-image: url("../images/awesome.svg");
-       background-size: cover;
-    }
-    &__container-background{
-        height: 457px;
-        //background: linear-gradient(#bfcdd0, #dde9ed);
-        //background: linear-gradient(0deg, rgba(169,214,178,1) 0%, rgba(201,242,210,1) 100%,);
-        //background-image: linear-gradient(to left top, #bfcdd0, #afd3d3, #a2d8ce, #9ddcc2, #a2deaf);
-        //background-image: radial-gradient(circle, #f9f4dc, #eaedcb, #d7e8be, #bfe3b4, #a2deaf);
-        background-image: radial-gradient(circle, #f9f4dc, #e2edd9, #d1e3d8, #c5d9d6, #bfcdd0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+.viewer {
+  &__header {
+    min-width: 320px;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    width: 201px;
+    height: 50px;
+    background-image: url("../images/awesome.svg");
+    background-size: cover;
+  }
+  &__container-background {
+    height: 457px;
+    //background: linear-gradient(#bfcdd0, #dde9ed);
+    //background: linear-gradient(0deg, rgba(169,214,178,1) 0%, rgba(201,242,210,1) 100%,);
+    //background-image: linear-gradient(to left top, #bfcdd0, #afd3d3, #a2d8ce, #9ddcc2, #a2deaf);
+    //background-image: radial-gradient(circle, #f9f4dc, #eaedcb, #d7e8be, #bfe3b4, #a2deaf);
+    background-image: radial-gradient(
+      circle,
+      #f9f4dc,
+      #e2edd9,
+      #d1e3d8,
+      #c5d9d6,
+      #bfcdd0
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    &__container-buttom-image{
-        display:flex;
-        flex-direction: column;
-        align-items: left;
-    }
-    &__buttom{
-        width: 75px;
-        height: 30px;
-        border-radius: 20px;
-        border: 1px solid white;
-        background: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    &__buttom-reset{
-        font-family: $fontMain;
-        font-size: 12px;
-        line-height: 20px;
-        color: $secondary-color; 
-    }
-
-    &__image-container{
-        width: 240px;
-        height: 329px;
-        background: white;
-        box-shadow: 0px 0px 23px -10px rgba(0,0,0,0.75);
-
-    }
-
-    &__image-title{
-        display:flex;
-        flex-direction: row;
-        margin-top: 23px;
-        margin-bottom: 10px;
-    }
-
-    &__image-line{
-        width: 5px;
-        height: 42px;
-        background: $dirty-blue;
-    }
-    &__image-name{
-        font-family: $fontCard;
-        font-weight: bold;
-        line-height: 20px;
-        font-size: 18px;
-        color: $dirty-blue;
-        margin: 0;
-        padding-left: 20px;
-        padding-bottom: 2px;
-    }
-    &__image-profession{
-        font-family: $fontCard;
-        font-weight: 500;
-        line-height: 20px;
-        font-size: 16px;
-        color: $secondary-color; 
-        margin: 0;
-        padding-left: 20px;
-        padding-top:2px;
-    }
-    &__profile-picture{
-        width: 240px;
-        height: 200px;
-        background-image: url("../images/natalie-portman.jpg");
-        background-size: cover;
-    }
-
-    &__icons{
-        display: flex;
-        flex-direction: row;
-        margin-top: 10px;
-        margin-left: 15px;
-    }
-    &__icon-style{
-        width: 32px;
-        height: 32px;
-        border-radius: 40px;
-        border: 2px solid $hospital-green;
-        margin: 0px 5px 0px 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.fa-trash-alt{
+  &__container-buttom-image {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  &__buttom {
+    width: 75px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__buttom-reset {
+    font-family: $fontMain;
     font-size: 12px;
+    line-height: 20px;
     color: $secondary-color;
-    margin-right: 10px;
+  }
+
+  &__image-container {
+    width: 240px;
+    height: 329px;
+    background: white;
+    box-shadow: 0px 0px 23px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  &__image-title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 23px;
+    margin-bottom: 10px;
+  }
+
+  &__image-line {
+    width: 5px;
+    height: 42px;
+    background: $dirty-blue;
+  }
+  &__image-name {
+    font-family: $fontCard;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 18px;
+    color: $dirty-blue;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 2px;
+  }
+  &__image-profession {
+    font-family: $fontCard;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    color: $secondary-color;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+  &__profile-picture {
+    width: 240px;
+    height: 200px;
+    background-image: url("../images/natalie-portman.jpg");
+    background-size: cover;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  &__icon-style {
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid $hospital-green;
+    margin: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.fa-mobile-alt, .fa-envelope, .fa-linkedin-in, .fa-github-alt {
-    color: $secondary-color;  
+
+.fa-trash-alt {
+  font-size: 12px;
+  color: $secondary-color;
+  margin-right: 10px;
+}
+.fa-mobile-alt,
+.fa-envelope,
+.fa-linkedin-in,
+.fa-github-alt {
+  color: $secondary-color;
 }
