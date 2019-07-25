@@ -2,9 +2,9 @@
   .section {
     display: flex;
     flex-direction: row-reverse;
-    align-items: space-around;
+    background-image: linear-gradient(to bottom, #f5f5f5, #ffffff);
   }
-  .design-queries {
+  .workSpace {
     background-color: red;
   }
 }
