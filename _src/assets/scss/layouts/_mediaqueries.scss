@@ -9,7 +9,7 @@
   }
 
   .visor__mediasq {
-    margin-left: 40px;
+    margin-left: 30px;
     background-image: radial-gradient(
       circle,
       #f9f4dc,
@@ -25,5 +25,14 @@
   .workS__mediasq {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .section__mediasq {
+    width: 100vw;
+  }
+  .visor__mediasq {
+    width: 60%;
   }
 }
