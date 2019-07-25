@@ -6,30 +6,37 @@
 
 .form {
   &__box {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 90vw;
     border-top: 1px solid $borderLine;
+    margin-bottom: 25px;
+    padding: 0 20px 0 20px;
+  }
+
+  &__box__position {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   &__title {
-    margin: 10px 155px 7px 10px;
     font-family: $fontMain;
     font-weight: bold;
     color: $secondary-color;
     font-size: 18px;
+    margin-left: 10px;
   }
 }
 
 .fa-keyboard--design {
-  margin-left: 31px;
   color: $dull-orange;
 }
 
 .fa-angle-down--design {
   font-size: 20px;
-  padding-right: 50px;
   color: $secondary-color;
 }
 
