@@ -61,28 +61,37 @@
     padding-left: 5px;
   }
 
-  &__btnLine {
+  &__section {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
-  &__btnAddImage {
-    margin-bottom: 7px;
-    height: 30px;
+  &__btnAdd {
     width: 140px;
+    height: 30px;
+    margin-bottom: 20px;
     background-color: $dull-orange;
-  }
-  &__btnText {
-    font-family: $fontMain;
-    font-size: 14px;
     color: white;
+    border-radius: 3px;
+    border-style: none;
+    font-size: 14px;
+    margin-right: 20px;
   }
 
-  &__btnClickBox {
+  &__input2 {
     border: $hospital-green solid 1px;
     height: 30px;
     width: 30px;
-    margin-bottom: 7px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+  }
+
+  &__input2--image {
+    border: $hospital-green solid 1px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    background-image: url(../images/natalie-portman.jpg);
+    background-size: cover;
   }
 }

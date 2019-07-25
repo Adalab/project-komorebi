@@ -51,7 +51,15 @@
   }
 
   &__button--grey {
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-style: none;
+    margin-bottom: 40px;
     background-color: #d5d5d5;
   }
 
