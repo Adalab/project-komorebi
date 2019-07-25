@@ -1,7 +1,9 @@
 .folded__menu {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
 }
 
 .form {
@@ -12,7 +14,6 @@
     align-items: center;
     border-top: 1px solid $borderLine;
     margin-bottom: 25px;
-    padding: 0 20px 0 20px;
   }
 
   &__box__position {
@@ -41,6 +42,7 @@
 }
 
 .folded__form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -55,7 +57,7 @@
   &__input {
     border: $hospital-green solid 1px;
     height: 30px;
-    width: 281px;
+    width: 100%;
     margin-bottom: 20px;
     padding-left: 5px;
   }
@@ -83,5 +85,21 @@
     height: 30px;
     width: 30px;
     margin-bottom: 7px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .folded__menu {
+    padding: 0;
+    align-items: space-between;
+  }
+
+  .form {
+    &__box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
