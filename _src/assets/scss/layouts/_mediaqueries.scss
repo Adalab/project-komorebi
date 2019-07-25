@@ -1,0 +1,10 @@
+@media all and (min-width: $tabletSize) {
+  .section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: space-around;
+  }
+  .design-queries {
+    background-color: red;
+  }
+}

@@ -84,7 +84,7 @@
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: $tabletSize) {
   .design {
     &__box {
       padding: 40px;
