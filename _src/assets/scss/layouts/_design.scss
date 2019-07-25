@@ -2,23 +2,24 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 0 20px;
   background: linear-gradient(#f5f5f5, #ffffff);
 
   &__box {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
   }
 
   &__title {
-    margin-left: 10px;
     font-family: $fontMain;
     font-weight: bold;
     color: $secondary-color;
     font-size: 18px;
+    margin-left: 10px;
   }
 
   &__subtitle {
@@ -27,6 +28,13 @@
     color: $secondary-color;
     font-size: 14px;
   }
+}
+
+.form__box__position {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .fa-object-ungroup--design {
@@ -39,6 +47,7 @@
 }
 
 .design__form {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 
@@ -55,14 +64,7 @@
 
 .color__box {
   display: flex;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 @import "design-colors";
-
-/* @media all and (min-width: 768px) {
-  .design {
-    padding: 40px;
-    background-color: transparent;
-  }
-} */
