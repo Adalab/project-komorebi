@@ -4,6 +4,10 @@
   flex-direction: column;
   align-items: center;
   border-top: solid 1px $borderLine;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
 
   @media all and (min-width: $tabletSize) {
     flex-direction: row;
