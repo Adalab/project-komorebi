@@ -15,13 +15,26 @@
     color: $secondary-color;
     font-size: 18px;
   }
+  &__button--orange {
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: $dull-orange;
+  }
+  &__button--text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }
 }
 
-.fa-share-alt--design {
+.fa-share-alt--share {
   color: $dull-orange;
 }
 
-.fa-angle-down--design {
+.fa-angle-down--up {
   font-size: 20px;
   color: $secondary-color;
 }
