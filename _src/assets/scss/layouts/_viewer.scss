@@ -1,18 +1,6 @@
 .viewer {
-  &__header {
-    min-width: 320px;
-    height: 111px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &__logo {
-    width: 201px;
-    height: 50px;
-    background-image: url("../images/awesome.svg");
-    background-size: cover;
-  }
   &__container-background {
+    min-width: 320px;
     height: 457px;
     //background: linear-gradient(#bfcdd0, #dde9ed);
     //background: linear-gradient(0deg, rgba(169,214,178,1) 0%, rgba(201,242,210,1) 100%,);
@@ -60,6 +48,7 @@
     height: 329px;
     background: white;
     box-shadow: 0px 0px 23px -10px rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
   }
 
   &__image-title {
@@ -129,4 +118,16 @@
 .fa-linkedin-in,
 .fa-github-alt {
   color: $secondary-color;
+}
+
+@media all and (min-width: 768px) {
+  .viewer {
+    &__container-background {
+      margin-top: 20px;
+      height: 100vh;
+      border-radius: 6px;
+      padding-top: 173px;
+      justify-content: flex-start;
+    }
+  }
 }

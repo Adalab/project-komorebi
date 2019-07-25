@@ -1,0 +1,54 @@
+.share__message {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $borderLine;
+  }
+
+  &__text {
+    font-family: $fontMain;
+    font-weight: 600px;
+    font-size: 18px;
+    color: $secondary-color;
+    margin: 0;
+  }
+
+  &__link-share {
+    font-family: $fontMain;
+    font-weight: 600px;
+    font-size: 12px;
+    color: $dull-orange;
+    margin-bottom: 10px;
+  }
+}
+
+.share__button--blue {
+  background-color: #00a0f5;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 181px;
+  height: 30px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.share__button__icon {
+  font-size: 18px;
+  color: white;
+  margin-right: 9.5px;
+}
+
+.share__button--text {
+  font-family: $fontMain;
+  font-size: 13px;
+  color: white;
+  margin: 0;
+}

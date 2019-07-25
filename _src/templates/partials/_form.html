@@ -7,7 +7,7 @@
     <i class="fas fa-angle-down fa-angle-down--design"></i>
   </div>
 
-  <form action="/signup" method="post" class="folded__form">
+  <div class="folded__form">
     <label for="fullName" class="folded__form__label">Nombre completo</label>
     <input
       placeholder="Ej: Sally Jill"
@@ -25,9 +25,10 @@
       class="folded__form__input"
     />
 
-    <div class="folded__form__btnLine">
-      <input type="submit" value="Añadir imágen" class="folder__form__btn" />
-      <div class="folded__form__clickbox"></div>
+    <label for="image" class="folded__form__label">Imagen de perfil</label>
+    <div class="folded__form__section">
+      <button name="image" class="folded__form__btnAdd">Añadir imagen</button>
+      <div class="folded__form__input2"></div>
     </div>
 
     <label for="emailAddress" class="folded__form__label"
@@ -64,5 +65,5 @@
       name="Github"
       class="folded__form__input"
     />
-  </form>
+  </div>
 </section>
