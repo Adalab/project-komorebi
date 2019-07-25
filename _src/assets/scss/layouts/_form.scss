@@ -27,25 +27,6 @@
   color: $dull-orange;
 }
 
-.share {
-  &__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    border-bottom: 1px solid $borderLine;
-    margin-bottom: 31px;
-  }
-
-  &__title {
-    margin: 10px 137px 7px 10px;
-    font-family: $fontMain;
-    font-weight: bold;
-    color: $secondary-color;
-    font-size: 18px;
-  }
-}
-
 .fa-angle-down--design {
   font-size: 20px;
   padding-right: 50px;
