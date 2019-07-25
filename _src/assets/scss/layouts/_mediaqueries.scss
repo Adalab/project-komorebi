@@ -10,6 +10,17 @@
 
   .visor__mediasq {
     margin-left: 40px;
+    background-image: radial-gradient(
+      circle,
+      #f9f4dc,
+      #e2edd9,
+      #d1e3d8,
+      #c5d9d6,
+      #bfcdd0
+    );
+    margin-bottom: 140px;
+    margin-top: 20px;
+    border-radius: 6px;
   }
   .workS__mediasq {
     display: flex;
