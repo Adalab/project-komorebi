@@ -8,13 +8,15 @@
   </div>
 
   <div class="folded__form">
-    <label for="fullName" class="folded__form__label">Nombre completo</label>
+    <label for="fullName" class="folded__form__label" id="fullName"
+      >Nombre completo</label
+    >
     <input
       placeholder="Ej: Sally Jill"
       id="fullName"
       type="text"
       name="fullName"
-      class="folded__form__input"
+      class="folded__form__input inputName"
     />
     <label for="profession" class="folded__form__label">Puesto</label>
     <input
@@ -22,12 +24,20 @@
       id="profession"
       type="text"
       name="profession"
-      class="folded__form__input"
+      class="folded__form__input inputJob"
     />
-
     <label for="image" class="folded__form__label">Imagen de perfil</label>
+
     <div class="folded__form__section">
-      <button name="image" class="folded__form__btnAdd">Añadir imagen</button>
+      <label for="image" class="folded__form__btnAdd">
+        Añadir Imagen
+      </label>
+      <input
+        type="file"
+        name="image"
+        id="image"
+        class="folded__form__inputFile"
+      />
       <div class="folded__form__input2"></div>
     </div>
 
