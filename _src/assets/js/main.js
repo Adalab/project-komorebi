@@ -2,6 +2,54 @@
 
 //debugger;
 
+const colorCheck = document.querySelectorAll(".form__item");
+
+const colorCheck1 = document.getElementById("design1");
+const colorCheck2 = document.getElementById("design2");
+
+const nameCheck = document.querySelector(".viewer__image-name");
+const professionCheck = document.querySelector(".viewer__image-profession");
+const lineCheck = document.querySelector(".viewer__image-line");
+const iconsCheck = document.querySelectorAll(".viewer__icon-style");
+
+let resultado = "";
+
+function capturar() {
+  // Recorremos todos los valores del radio button para encontrar el seleccionado
+  for (let i = 0; i < colorCheck.length; i++) {
+    if (colorCheck[i].checked) resultado = colorCheck[i].value;
+
+    if (resultado === "color2") {
+      nameCheck.classList.remove("viewer__image-name"),
+        nameCheck.classList.add("viewer__image-name-color2");
+      professionCheck.classList.remove("viewer__image-profession"),
+        professionCheck.classList.add("viewer__image-profession-color2");
+      lineCheck.classList.remove("viewer__image-line"),
+        lineCheck.classList.add("viewer__image-line-color2");
+
+      for (let a = 0; a < iconsCheck.length; a++) {
+        iconsCheck[a].classList.remove("viewer__icon-style"),
+          iconsCheck[a].classList.add("viewer__icon-style-color2");
+      }
+    } else if (resultado === "color1") {
+      nameCheck.classList.remove("viewer__image-name-color2"),
+        nameCheck.classList.add("viewer__image-name");
+      professionCheck.classList.remove("viewer__image-profession-color2"),
+        professionCheck.classList.add("viewer__image-profession");
+      lineCheck.classList.remove("viewer__image-line-color2"),
+        lineCheck.classList.add("viewer__image-line");
+
+      for (let a = 0; a < iconsCheck.length; a++) {
+        iconsCheck[a].classList.remove("viewer__icon-style-color2"),
+          iconsCheck[a].classList.add("viewer__icon-style");
+      }
+    }
+  }
+}
+
+colorCheck1.addEventListener("click", capturar);
+colorCheck2.addEventListener("click", capturar);
+
 //previsualizar imagen de input type file
 
 const imagePreview = document.querySelector(".folded__form__inputFile");

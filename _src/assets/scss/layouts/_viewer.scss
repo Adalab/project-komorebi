@@ -63,6 +63,13 @@
     height: 42px;
     background: $dirty-blue;
   }
+
+  &__image-line-color2 {
+    width: 5px;
+    height: 42px;
+    background: $dirty-red;
+  }
+
   &__image-name {
     font-family: $fontCard;
     font-weight: bold;
@@ -73,6 +80,18 @@
     padding-left: 20px;
     padding-bottom: 2px;
   }
+
+  &__image-name-color2 {
+    font-family: $fontCard;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 18px;
+    color: $dirty-red;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 2px;
+  }
+
   &__image-profession {
     font-family: $fontCard;
     font-weight: 500;
@@ -83,6 +102,18 @@
     padding-left: 20px;
     padding-top: 2px;
   }
+
+  &__image-profession-color2 {
+    font-family: $fontCard;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    color: $maroon;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+
   &__profile-picture {
     width: 240px;
     height: 200px;
@@ -107,6 +138,18 @@
     height: 32px;
     border-radius: 40px;
     border: 2px solid $hospital-green;
+    color: $secondary-color;
+    margin: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon-style-color2 {
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid $dark-orange;
+    color: $maroon;
     margin: 0px 5px 0px 5px;
     display: flex;
     align-items: center;
@@ -123,7 +166,14 @@
 .fa-envelope,
 .fa-linkedin-in,
 .fa-github-alt {
-  color: $secondary-color;
+  //color: $secondary-color;
+}
+
+.fa-mobile-alt-color2,
+.fa-envelope-color2,
+.fa-linkedin-in-color2,
+.fa-github-alt-color2 {
+  color: $maroon;
 }
 
 @media all and (min-width: 768px) {
