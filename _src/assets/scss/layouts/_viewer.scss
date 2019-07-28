@@ -69,6 +69,26 @@
     height: 42px;
     background: $dirty-red;
   }
+  &__image-line-color3 {
+    width: 5px;
+    height: 42px;
+    background: $yellow-mustard;
+  }
+  &__image-line-color4 {
+    width: 5px;
+    height: 42px;
+    background: $greenish-grey;
+  }
+  &__image-line-color5 {
+    width: 5px;
+    height: 42px;
+    background: $pale-purple;
+  }
+  &__image-line-color6 {
+    width: 5px;
+    height: 42px;
+    background: $medium-purple;
+  }
 
   &__image-name {
     font-family: $fontCard;
@@ -87,6 +107,46 @@
     line-height: 20px;
     font-size: 18px;
     color: $dirty-red;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 2px;
+  }
+  &__image-name-color3 {
+    font-family: $fontCard;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 18px;
+    color: $yellow-mustard;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 2px;
+  }
+  &__image-name-color4 {
+    font-family: $fontCard;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 18px;
+    color: $greenish-grey;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 2px;
+  }
+  &__image-name-color5 {
+    font-family: $fontCard;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 18px;
+    color: $pale-purple;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 2px;
+  }
+  &__image-name-color6 {
+    font-family: $fontCard;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 18px;
+    color: $medium-purple;
     margin: 0;
     padding-left: 20px;
     padding-bottom: 2px;
@@ -113,12 +173,52 @@
     padding-left: 20px;
     padding-top: 2px;
   }
+  &__image-profession-color3 {
+    font-family: $fontCard;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    color: $dark-green;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+  &__image-profession-color4 {
+    font-family: $fontCard;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    color: $blue-jean;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+  &__image-profession-color5 {
+    font-family: $fontCard;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    color: $dark-red;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+  &__image-profession-color6 {
+    font-family: $fontCard;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    color: $dark-violet;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 2px;
+  }
 
   &__profile-picture {
     width: 240px;
     height: 200px;
     //background-image: url("../images/natalie-portman.jpg");
-    background-size: cover;
+    //background-size: cover;
   }
 
   &__profile-picture-image {
@@ -155,25 +255,56 @@
     align-items: center;
     justify-content: center;
   }
+  &__icon-style-color3 {
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid $pale-blue;
+    color: $dark-green;
+    margin: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon-style-color4 {
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid $light-yellow;
+    color: $blue-jean;
+    margin: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon-style-color5 {
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid $light-orange;
+    color: $dark-red;
+    margin: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon-style-color6 {
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid $light-purple;
+    color: $dark-violet;
+    margin: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .fa-trash-alt {
   font-size: 12px;
   color: $secondary-color;
   margin-right: 10px;
-}
-.fa-mobile-alt,
-.fa-envelope,
-.fa-linkedin-in,
-.fa-github-alt {
-  //color: $secondary-color;
-}
-
-.fa-mobile-alt-color2,
-.fa-envelope-color2,
-.fa-linkedin-in-color2,
-.fa-github-alt-color2 {
-  color: $maroon;
 }
 
 @media all and (min-width: 768px) {
