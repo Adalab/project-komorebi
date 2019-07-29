@@ -1,6 +1,6 @@
 @media all and (min-width: 768px) {
   .section__mediasq {
-    width: 100vw;
+    //width: 100vw;
     padding: 0 40px;
     display: flex;
     flex-direction: row-reverse;
@@ -30,7 +30,7 @@
 
 @media all and (min-width: 1200px) {
   .section__mediasq {
-    width: 100vw;
+    //width: 100vw;
   }
   .visor__mediasq {
     width: 60%;
