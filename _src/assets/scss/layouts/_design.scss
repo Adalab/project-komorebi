@@ -59,11 +59,28 @@
 
 .form__item {
   margin: 10px 0;
+  display: none;
 }
 
 .color__box {
   display: flex;
   padding: 10px 0;
+}
+
+.radio_btn {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+input[type="radio"]:checked + label {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  border: 6px solid#63adff;
 }
 
 @import "design-colors";
