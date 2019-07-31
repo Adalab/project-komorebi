@@ -291,4 +291,16 @@ function resetForm() {
 }
 resetBtn.addEventListener("click", resetForm);
 
-//-------------COLAPSABLES-----------------------
+//-------------COLAPSABLE DESIGN-----------------------
+
+const collapse = document.querySelector(".js-collapse");
+const collapsable = document.querySelector(".design__form");
+
+function collapseSectionDesign() {
+  collapsable.classList.toggle("design__form");
+  collapsable.classList.toggle("hidden");
+  collapse.classList.toggle("fa-angle-up");
+  collapse.classList.toggle("fa-angle-down");
+}
+
+collapse.addEventListener("click", collapseSectionDesign);
