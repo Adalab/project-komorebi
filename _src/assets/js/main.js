@@ -133,7 +133,7 @@ function previewImage(ev) {
   reader.readAsDataURL(ev.target.files[0]);
 
   // Le decimos que cuando este listo ejecute el código interno
-  reader.onload = function() {
+  reader.onload = function () {
     let image = document.createElement("img");
 
     image.src = reader.result; //modificamos la ruta de la imagen con la ruta del archivo subido
@@ -141,12 +141,12 @@ function previewImage(ev) {
     //cambiamos el html del div para poner la imagen pero con la nueva ruta
     preview.innerHTML = `<img src="${
       image.src
-    }" alt="image user" class="folded__form__input2--image" />`;
+      }" alt="image user" class="folded__form__input2--image" />`;
 
     //lo mismo, pero para el div de la foto grande
     userPreview.innerHTML = `<img src="${
       image.src
-    }" alt="image user" class="viewer__profile-picture-image" />`;
+      }" alt="image user" class="viewer__profile-picture-image" />`;
   };
 }
 //evento del boton añadir imagen, que al hacer "change", ejecuta la funcion previewImage
@@ -178,34 +178,34 @@ function upgradeJob(event) {
 
 function upgradeTel(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) {}
+  for (let a = 0; a < iconsCheck.length; a++) { }
   iconsCheck[0].innerHTML = `<a href="tel:${
     mail.value
-  }" target="_blank"><i class="fas fa-mobile-alt"></i></a>`;
+    }" target="_blank"><i class="fas fa-mobile-alt"></i></a>`;
 }
 
 function upgradeMail(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) {}
+  for (let a = 0; a < iconsCheck.length; a++) { }
   iconsCheck[1].innerHTML = `<a href="mailto:${
     mail.value
-  }" target="_blank"><i class="far fa-envelope"></i></a>`;
+    }" target="_blank"><i class="far fa-envelope"></i></a>`;
 }
 
 function upgradeLinkedin(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) {}
+  for (let a = 0; a < iconsCheck.length; a++) { }
   iconsCheck[2].innerHTML = `<a href="https://www.${
     mail.value
-  }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
+    }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
 }
 
 function upgradeGithubn(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) {}
+  for (let a = 0; a < iconsCheck.length; a++) { }
   iconsCheck[3].innerHTML = `<a href="https://github.com/${
     mail.value
-  }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
+    }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
 }
 
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
@@ -215,3 +215,35 @@ mail.addEventListener("keyup", upgradeMail);
 tel.addEventListener("keyup", upgradeTel);
 linkedin.addEventListener("keyup", upgradeLinkedin);
 Github.addEventListener("keyup", upgradeGithubn);
+
+// colapsables
+
+const designCollapsable = document.querySelector('.design__form');
+const formCollapsable = document.querySelector('.folded__form');
+const shareCollapsable = document.querySelector('.share__button')
+const designArrow = document.querySelector('.js-arrowDesign');
+const formArrow = document.querySelector('.js-arrowForm');
+const shareArrow = document.querySelector('.js-arrowShare');
+
+function openAccordion(event) {
+  const ev = event.currentTarget;
+  designCollapsable.classList.remove('design__form', 'hidden');
+  if (ev === designArrow) {
+    designCollapsable.classList.add('hidden');
+  } else if (ev === formArrow) {
+    formCollapsable.classList.toggle('folded__form');
+    formCollapsable.classList.toggle('hidden');
+  } else if (ev === shareArrow) {
+    shareCollapsable.classList.toggle('share__button');
+    shareCollapsable.classList.toggle('hidden');
+  }
+}
+
+designArrow.addEventListener('click', openAccordion);
+formArrow.addEventListener('click', openAccordion);
+shareArrow.addEventListener('click', openAccordion);
+
+/* designCollapsable.classList.toggle('design__form');
+designCollapsable.classList.toggle('hidden');
+designArrow.classList.toggle('fa-angle-up');
+designArrow.classList.toggle('fa-angle-down'); */
