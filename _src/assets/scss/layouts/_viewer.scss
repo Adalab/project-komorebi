@@ -43,6 +43,10 @@
     color: $secondary-color;
   }
 
+  &__buttom-resetNative {
+    display: none;
+  }
+
   &__image-container {
     width: 240px;
     height: 329px;
