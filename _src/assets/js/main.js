@@ -64,7 +64,7 @@ function changeColor() {
         "viewer__icon-style-color6"
       );
     }
-    //segun el resultado del check radio, añadimos las clases correspondientes al color elegido
+    //según el resultado del check radio, añadimos las clases correspondientes al color elegido
     if (resultado === "color1") {
       nameCheck.classList.add("viewer__image-name");
       professionCheck.classList.add("viewer__image-profession");
