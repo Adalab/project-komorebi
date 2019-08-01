@@ -218,9 +218,10 @@ Github.addEventListener("keyup", upgradeGithubn);
 
 // colapsables
 
-const designCollapsable = document.querySelector('.design__form');
-const formCollapsable = document.querySelector('.folded__form');
-const shareCollapsable = document.querySelector('.share__button')
+const designCollapsable = document.querySelector('.js-design');
+const formCollapsable = document.querySelector('.js-form');
+const shareCollapsable = document.querySelector('.js-share')
+const shareMessage = document.querySelector('.js-shareMessage')
 const designArrow = document.querySelector('.js-arrowDesign');
 const formArrow = document.querySelector('.js-arrowForm');
 const shareArrow = document.querySelector('.js-arrowShare');
@@ -228,14 +229,36 @@ const shareArrow = document.querySelector('.js-arrowShare');
 function openAccordion(event) {
   const ev = event.currentTarget;
   designCollapsable.classList.remove('design__form', 'hidden');
+  formCollapsable.classList.remove('folded__form', 'hidden');
+  shareCollapsable.classList.remove('share__button', 'hidden');
+  shareMessage.classList.remove('share__message', 'hidden');
+  designArrow.classList.remove('fa-angle-up', 'fa-angle-down');
+  formArrow.classList.remove('fa-angle-up', 'fa-angle-down');
+  shareArrow.classList.remove('fa-angle-up', 'fa-angle-down');
   if (ev === designArrow) {
-    designCollapsable.classList.add('hidden');
+    designCollapsable.classList.add('design__form');
+    formCollapsable.classList.add('hidden');
+    shareCollapsable.classList.add('hidden');
+    shareMessage.classList.add('hidden');
+    designArrow.classList.add('fa-angle-up');
+    formArrow.classList.add('fa-angle-down');
+    shareArrow.classList.add('fa-angle-down');
   } else if (ev === formArrow) {
-    formCollapsable.classList.toggle('folded__form');
-    formCollapsable.classList.toggle('hidden');
+    designCollapsable.classList.add('hidden');
+    formCollapsable.classList.add('folded__form');
+    shareCollapsable.classList.add('hidden');
+    shareMessage.classList.add('hidden');
+    formArrow.classList.add('fa-angle-up');
+    designArrow.classList.add('fa-angle-down');
+    shareArrow.classList.add('fa-angle-down');
   } else if (ev === shareArrow) {
-    shareCollapsable.classList.toggle('share__button');
-    shareCollapsable.classList.toggle('hidden');
+    designCollapsable.classList.add('hidden');
+    formCollapsable.classList.add('hidden');
+    shareCollapsable.classList.add('share__button');
+    shareMessage.classList.add('share__message');
+    shareArrow.classList.add('fa-angle-up');
+    designArrow.classList.add('fa-angle-down');
+    formArrow.classList.add('fa-angle-down');
   }
 }
 
@@ -243,7 +266,14 @@ designArrow.addEventListener('click', openAccordion);
 formArrow.addEventListener('click', openAccordion);
 shareArrow.addEventListener('click', openAccordion);
 
-/* designCollapsable.classList.toggle('design__form');
-designCollapsable.classList.toggle('hidden');
-designArrow.classList.toggle('fa-angle-up');
-designArrow.classList.toggle('fa-angle-down'); */
+
+
+
+/* const everyAccordionSection = document.querySelectorAll('.js-accordion');
+
+function openAccordion (event){
+  const ev = event.currentTarget;
+  if (ev === )
+}
+
+everyAccordionSection.addEventListener('click', openAccordion); */

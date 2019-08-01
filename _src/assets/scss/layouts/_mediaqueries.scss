@@ -1,4 +1,12 @@
-@media all and (min-width: 768px) {
+.workSpace{
+  width: 100%;
+  margin-bottom: 130px;
+}
+
+@media all and (min-width: $tabletSize) {
+  .workSpace{
+    margin-bottom: 0;
+  }
   .section__mediasq {
     //width: 100vw;
     padding: 0 40px;
@@ -18,7 +26,7 @@
       #c5d9d6,
       #bfcdd0
     );
-    margin-bottom: 140px;
+    margin-bottom: 80px;
     margin-top: 20px;
     border-radius: 6px;
   }
@@ -28,7 +36,10 @@
   }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: $desktopSize) {
+  .workSpace{
+    width: 329px;
+  }
   .section__mediasq {
     //width: 100vw;
   }

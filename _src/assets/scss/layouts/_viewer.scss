@@ -307,14 +307,12 @@
   margin-right: 10px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: $tabletSize) {
   .viewer {
     &__container-background {
       margin-top: 20px;
-      height: 100vh;
+      height: 75vh;
       border-radius: 6px;
-      padding-top: 173px;
-      justify-content: flex-start;
       background: opacify($color: transparent, $amount: 0);
     }
   }

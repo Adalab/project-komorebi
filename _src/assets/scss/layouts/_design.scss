@@ -85,7 +85,7 @@ input[type="radio"]:checked + label {
 
 @import "design-colors";
 
-@media all and (min-width: 768px) {
+@media all and (min-width: $tabletSize) {
   .design {
     padding: 0;
     background: opacify($color: transparent, $amount: 0);
