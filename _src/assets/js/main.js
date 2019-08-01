@@ -166,10 +166,26 @@ const Github = document.querySelector(".Github");
 const viewerName = document.querySelector(".js-Name");
 const viewerJob = document.querySelector(".js-Job");
 
+// function upgradeName(event) {
+//   const fullName = event.currentTarget;
+//   viewerName.innerHTML = `${fullName.value}`;
+// }
+
+// if (viewerName.innerHTML === null) { return; }
+
+// function defaultName(event) {
+// viewerName.innerHTML = 'Nombre Apellido';
+// / }
+
 function upgradeName(event) {
-  const fullName = event.currentTarget;
+  // const fullName = event.currentTarget;
   viewerName.innerHTML = `${fullName.value}`;
+  if (fullName.value === '') {
+    viewerName.innerHTML = 'Nombre Apellido';
+  }
 }
+
+
 
 function upgradeJob(event) {
   const job = event.currentTarget;
@@ -210,6 +226,8 @@ function upgradeGithubn(event) {
 
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
 fullName.addEventListener("keyup", upgradeName);
+// fullName.removeEventListener()("change", defaultName);
+
 job.addEventListener("keyup", upgradeJob);
 mail.addEventListener("keyup", upgradeMail);
 tel.addEventListener("keyup", upgradeTel);
