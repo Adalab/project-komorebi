@@ -1,9 +1,9 @@
-.collapsable {
+.content {
   width: 100%;
   display: none;
 }
 
-.collapsable.open {
+.js-collapsable.open .content {
   width: 100%;
   display: block;
 }
@@ -55,7 +55,7 @@
   color: $secondary-color;
 }
 
-.fa-angle-up--design.open {
+.js-collapsable.open .fa-angle-up--design {
   font-size: 20px;
   color: $secondary-color;
   transform: rotate(180deg);
