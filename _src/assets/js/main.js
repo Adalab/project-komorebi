@@ -133,7 +133,7 @@ function previewImage(ev) {
   reader.readAsDataURL(ev.target.files[0]);
 
   // Le decimos que cuando este listo ejecute el código interno
-  reader.onload = function () {
+  reader.onload = function() {
     let image = document.createElement("img");
 
     image.src = reader.result; //modificamos la ruta de la imagen con la ruta del archivo subido
@@ -141,12 +141,12 @@ function previewImage(ev) {
     //cambiamos el html del div para poner la imagen pero con la nueva ruta
     preview.innerHTML = `<img src="${
       image.src
-      }" alt="image user" class="folded__form__input2--image" />`;
+    }" alt="image user" class="folded__form__input2--image" />`;
 
     //lo mismo, pero para el div de la foto grande
     userPreview.innerHTML = `<img src="${
       image.src
-      }" alt="image user" class="viewer__profile-picture-image" />`;
+    }" alt="image user" class="viewer__profile-picture-image" />`;
   };
 }
 //evento del boton añadir imagen, que al hacer "change", ejecuta la funcion previewImage
@@ -178,34 +178,34 @@ function upgradeJob(event) {
 
 function upgradeTel(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) { }
+  for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[0].innerHTML = `<a href="tel:${
     mail.value
-    }" target="_blank"><i class="fas fa-mobile-alt"></i></a>`;
+  }" target="_blank"><i class="fas fa-mobile-alt"></i></a>`;
 }
 
 function upgradeMail(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) { }
+  for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[1].innerHTML = `<a href="mailto:${
     mail.value
-    }" target="_blank"><i class="far fa-envelope"></i></a>`;
+  }" target="_blank"><i class="far fa-envelope"></i></a>`;
 }
 
 function upgradeLinkedin(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) { }
+  for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[2].innerHTML = `<a href="https://www.${
     mail.value
-    }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
+  }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
 }
 
 function upgradeGithubn(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) { }
+  for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[3].innerHTML = `<a href="https://github.com/${
     mail.value
-    }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
+  }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
 }
 
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
@@ -216,64 +216,52 @@ tel.addEventListener("keyup", upgradeTel);
 linkedin.addEventListener("keyup", upgradeLinkedin);
 Github.addEventListener("keyup", upgradeGithubn);
 
-// colapsables
+//-----------------COLLAPSABLES-----------------------
 
-const designCollapsable = document.querySelector('.js-design');
-const formCollapsable = document.querySelector('.js-form');
-const shareCollapsable = document.querySelector('.js-share')
-const shareMessage = document.querySelector('.js-shareMessage')
-const designArrow = document.querySelector('.js-arrowDesign');
-const formArrow = document.querySelector('.js-arrowForm');
-const shareArrow = document.querySelector('.js-arrowShare');
+const collapsable = document.querySelectorAll(".collapsable");
+const arrow = document.querySelectorAll(".js-arrow");
 
-function openAccordion(event) {
-  const ev = event.currentTarget;
-  designCollapsable.classList.remove('design__form', 'hidden');
-  formCollapsable.classList.remove('folded__form', 'hidden');
-  shareCollapsable.classList.remove('share__button', 'hidden');
-  shareMessage.classList.remove('share__message', 'hidden');
-  designArrow.classList.remove('fa-angle-up', 'fa-angle-down');
-  formArrow.classList.remove('fa-angle-up', 'fa-angle-down');
-  shareArrow.classList.remove('fa-angle-up', 'fa-angle-down');
-  if (ev === designArrow) {
-    designCollapsable.classList.add('design__form');
-    formCollapsable.classList.add('hidden');
-    shareCollapsable.classList.add('hidden');
-    shareMessage.classList.add('hidden');
-    designArrow.classList.add('fa-angle-up');
-    formArrow.classList.add('fa-angle-down');
-    shareArrow.classList.add('fa-angle-down');
-  } else if (ev === formArrow) {
-    designCollapsable.classList.add('hidden');
-    formCollapsable.classList.add('folded__form');
-    shareCollapsable.classList.add('hidden');
-    shareMessage.classList.add('hidden');
-    formArrow.classList.add('fa-angle-up');
-    designArrow.classList.add('fa-angle-down');
-    shareArrow.classList.add('fa-angle-down');
-  } else if (ev === shareArrow) {
-    designCollapsable.classList.add('hidden');
-    formCollapsable.classList.add('hidden');
-    shareCollapsable.classList.add('share__button');
-    shareMessage.classList.add('share__message');
-    shareArrow.classList.add('fa-angle-up');
-    designArrow.classList.add('fa-angle-down');
-    formArrow.classList.add('fa-angle-down');
+function openArrow(ev) {
+  const currentStatus = ev.currentTarget.classList.contains("open");
+  if (currentStatus === true) {
+    ev.currentTarget.classList.remove("open");
+  } else {
+    ev.currentTarget.classList.add("open");
   }
 }
 
-designArrow.addEventListener('click', openAccordion);
-formArrow.addEventListener('click', openAccordion);
-shareArrow.addEventListener('click', openAccordion);
-
-
-
-
-/* const everyAccordionSection = document.querySelectorAll('.js-accordion');
-
-function openAccordion (event){
-  const ev = event.currentTarget;
-  if (ev === )
+function openCollapsable0() {
+  for (let i = 0; i < collapsable.length; i++) {
+    collapsable[0].classList.toggle("open");
+    collapsable[1].classList.remove("open");
+    collapsable[2].classList.remove("open");
+  }
 }
 
-everyAccordionSection.addEventListener('click', openAccordion); */
+function openCollapsable1() {
+  for (let i = 0; i < collapsable.length; i++) {
+    collapsable[0].classList.remove("open");
+    collapsable[1].classList.toggle("open");
+    collapsable[2].classList.remove("open");
+  }
+}
+
+function openCollapsable2() {
+  for (let i = 0; i < collapsable.length; i++) {
+    collapsable[0].classList.remove("open");
+    collapsable[1].classList.remove("open");
+    collapsable[2].classList.toggle("open");
+  }
+}
+
+for (let i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", openArrow);
+
+  if (i === 0) {
+    arrow[0].addEventListener("click", openCollapsable0);
+  } else if (i === 1) {
+    arrow[1].addEventListener("click", openCollapsable1);
+  } else if (i === 2) {
+    arrow[2].addEventListener("click", openCollapsable2);
+  }
+}

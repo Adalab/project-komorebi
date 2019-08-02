@@ -1,3 +1,13 @@
+.collapsable {
+  width: 100%;
+  display: none;
+}
+
+.collapsable.open {
+  width: 100%;
+  display: block;
+}
+
 .design {
   width: 100%;
   display: flex;
@@ -43,6 +53,12 @@
 .fa-angle-up--design {
   font-size: 20px;
   color: $secondary-color;
+}
+
+.fa-angle-up--design.open {
+  font-size: 20px;
+  color: $secondary-color;
+  transform: rotate(180deg);
 }
 
 .design__form {

@@ -4,35 +4,77 @@
       <i class="far fa-keyboard fa-keyboard--design"></i>
       <h2 class="form__title">RELLENA</h2>
     </div>
-    <i class="fas fa-angle-down fa-angle-up--design js-arrowForm"></i>
+    <i class="fas fa-angle-down fa-angle-up--design js-arrow"></i>
   </div>
+  <div class="collapsable">
+    <div class="folded__form">
+      <label for="fullName" class="folded__form__label" id="fullName"
+        >Nombre completo</label
+      >
+      <input
+        placeholder="Ej: Sally Jill"
+        id="fullName"
+        type="text"
+        name="fullName"
+        class="folded__form__input inputName"
+      />
+      <label for="profession" class="folded__form__label">Puesto</label>
+      <input
+        placeholder="Ej: Front-end unicorn"
+        id="profession"
+        type="text"
+        name="profession"
+        class="folded__form__input inputJob"
+      />
+      <label for="image" class="folded__form__label">Imagen de perfil</label>
 
-  <div class="hidden js-form">
-    <label for="fullName" class="folded__form__label" id="fullName">Nombre completo</label>
-    <input placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName"
-      class="folded__form__input inputName" />
-    <label for="profession" class="folded__form__label">Puesto</label>
-    <input placeholder="Ej: Front-end unicorn" id="profession" type="text" name="profession"
-      class="folded__form__input inputJob" />
-    <label for="image" class="folded__form__label">Imagen de perfil</label>
+      <div class="folded__form__section">
+        <label for="image" class="folded__form__btnAdd">
+          Añadir Imagen
+        </label>
+        <input
+          type="file"
+          name="image"
+          id="image"
+          class="folded__form__inputFile"
+        />
+        <div class="folded__form__input2"></div>
+      </div>
 
-    <div class="folded__form__section">
-      <label for="image" class="folded__form__btnAdd">
-        Añadir Imagen
-      </label>
-      <input type="file" name="image" id="image" class="folded__form__inputFile" />
-      <div class="folded__form__input2"></div>
+      <label for="emailAddress" class="folded__form__label"
+        >Correo electrónico</label
+      >
+      <input
+        placeholder="Ej: sally-hill@gmail.com"
+        type="email"
+        id="emailAddress"
+        name="emailAddress"
+        class="folded__form__input mail"
+      />
+      <label for="telephone" class="folded__form__label">Teléfono</label>
+      <input
+        placeholder="Ej: 555-55-55-55"
+        type="tel"
+        id="telephone"
+        name="telephone"
+        class="folded__form__input tel"
+      />
+      <label for="Linkedin" class="folded__form__label">Linkedin</label>
+      <input
+        placeholder="Ej: linkedin.com/in/sally.hill"
+        id="Linkedin"
+        type="text"
+        name="Linkedin"
+        class="folded__form__input linkedin"
+      />
+      <label for="Github" class="folded__form__label">Github</label>
+      <input
+        placeholder="Ej: sally-hill"
+        type="text"
+        id="Github"
+        name="Github"
+        class="folded__form__input Github"
+      />
     </div>
-
-    <label for="emailAddress" class="folded__form__label">Correo electrónico</label>
-    <input placeholder="Ej: sally-hill@gmail.com" type="email" id="emailAddress" name="emailAddress"
-      class="folded__form__input mail" />
-    <label for="telephone" class="folded__form__label">Teléfono</label>
-    <input placeholder="Ej: 555-55-55-55" type="tel" id="telephone" name="telephone" class="folded__form__input tel" />
-    <label for="Linkedin" class="folded__form__label">Linkedin</label>
-    <input placeholder="Ej: linkedin.com/in/sally.hill" id="Linkedin" type="text" name="Linkedin"
-      class="folded__form__input linkedin" />
-    <label for="Github" class="folded__form__label">Github</label>
-    <input placeholder="Ej: sally-hill" type="text" id="Github" name="Github" class="folded__form__input Github" />
   </div>
 </section>
