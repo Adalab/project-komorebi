@@ -166,6 +166,24 @@ const Github = document.querySelector(".Github");
 const viewerName = document.querySelector(".js-Name");
 const viewerJob = document.querySelector(".js-Job");
 
+// vamos a recoger los datos del form en localStore
+const formData = document.querySelector('.js-form');
+
+const handleFormData = () => {
+  const data = {
+    name: fullName.value,
+    job: job.value,
+    mail: mail.value,
+    tel: tel.value,
+    linkedin: linkedin.value,
+    github: Github.value
+  };
+
+  localStorage.setItem('userData', JSON.stringify(data));
+};
+
+
+// esta función hace que al borrar el input vuelva a estar relleno con los datos de ejemplo
 // para decir que un imput esta vacio se escribe asi === ''
 function upgradeName(event) {
   viewerName.innerHTML = `${fullName.value}`;
@@ -174,7 +192,7 @@ function upgradeName(event) {
   }
 }
 
-
+// esta función hace que al borrar el input vuelva a estar relleno con los datos de ejemplo
 function upgradeJob(event) {
   // const job = event.currentTarget;
   viewerJob.innerHTML = `${job.value}`;
@@ -223,3 +241,4 @@ mail.addEventListener('keyup', upgradeMail);
 tel.addEventListener('keyup', upgradeTel);
 linkedin.addEventListener('keyup', upgradeLinkedin);
 Github.addEventListener('keyup', upgradeGithubn);
+formData.addEventListener('keyup', handleFormData);
