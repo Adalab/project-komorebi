@@ -166,19 +166,8 @@ const Github = document.querySelector(".Github");
 const viewerName = document.querySelector(".js-Name");
 const viewerJob = document.querySelector(".js-Job");
 
-// function upgradeName(event) {
-//   const fullName = event.currentTarget;
-//   viewerName.innerHTML = `${fullName.value}`;
-// }
-
-// if (viewerName.innerHTML === null) { return; }
-
-// function defaultName(event) {
-// viewerName.innerHTML = 'Nombre Apellido';
-// / }
-
+// para decir que un imput esta vacio se escribe asi === ''
 function upgradeName(event) {
-  // const fullName = event.currentTarget;
   viewerName.innerHTML = `${fullName.value}`;
   if (fullName.value === '') {
     viewerName.innerHTML = 'Nombre Apellido';
@@ -186,10 +175,12 @@ function upgradeName(event) {
 }
 
 
-
 function upgradeJob(event) {
-  const job = event.currentTarget;
+  // const job = event.currentTarget;
   viewerJob.innerHTML = `${job.value}`;
+  if (job.value === '') {
+    viewerJob.innerHTML = 'Front-end developer';
+  }
 }
 
 function upgradeTel(event) {
@@ -221,15 +212,14 @@ function upgradeGithubn(event) {
   for (let a = 0; a < iconsCheck.length; a++) { }
   iconsCheck[3].innerHTML = `<a href="https://github.com/${
     mail.value
+    // eslint-disable-next-line indent
     }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
 }
 
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
-fullName.addEventListener("keyup", upgradeName);
-// fullName.removeEventListener()("change", defaultName);
-
-job.addEventListener("keyup", upgradeJob);
-mail.addEventListener("keyup", upgradeMail);
-tel.addEventListener("keyup", upgradeTel);
-linkedin.addEventListener("keyup", upgradeLinkedin);
-Github.addEventListener("keyup", upgradeGithubn);
+fullName.addEventListener('keyup', upgradeName);
+job.addEventListener('keyup', upgradeJob);
+mail.addEventListener('keyup', upgradeMail);
+tel.addEventListener('keyup', upgradeTel);
+linkedin.addEventListener('keyup', upgradeLinkedin);
+Github.addEventListener('keyup', upgradeGithubn);
