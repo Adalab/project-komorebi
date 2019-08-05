@@ -160,7 +160,7 @@ const job = document.querySelector(".inputJob");
 const mail = document.querySelector(".mail");
 const tel = document.querySelector(".tel");
 const linkedin = document.querySelector(".linkedin");
-const Github = document.querySelector(".Github");
+const github = document.querySelector(".Github");
 
 //recogemos los campos del visor que queremos actualizar
 const viewerName = document.querySelector(".js-Name");
@@ -176,12 +176,21 @@ const handleFormData = () => {
     mail: mail.value,
     tel: tel.value,
     linkedin: linkedin.value,
-    github: Github.value
+    github: github.value
   };
 
   localStorage.setItem('userData', JSON.stringify(data));
 };
 
+const getLocalStorage = () => {
+  const getData = JSON.parse(localStorage.getItem('userData'));
+  fullName.value = getData.name;
+  job.value = getData.job;
+  mail.value = getData.mail;
+  tel.value = getData.tel;
+  linkedin.value = getData.linkedin;
+  github.value = getData.github;
+};
 
 // esta función hace que al borrar el input vuelva a estar relleno con los datos de ejemplo
 // para decir que un imput esta vacio se escribe asi === ''
@@ -240,5 +249,6 @@ job.addEventListener('keyup', upgradeJob);
 mail.addEventListener('keyup', upgradeMail);
 tel.addEventListener('keyup', upgradeTel);
 linkedin.addEventListener('keyup', upgradeLinkedin);
-Github.addEventListener('keyup', upgradeGithubn);
+github.addEventListener('keyup', upgradeGithubn);
 formData.addEventListener('keyup', handleFormData);
+getLocalStorage();
