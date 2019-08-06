@@ -10,6 +10,17 @@ const colorCheck4 = document.getElementById("design4");
 const colorCheck5 = document.getElementById("design5");
 const colorCheck6 = document.getElementById("design6");
 
+//Creamos las constantes color1-6 y colorsData que contiene las 6 paletas design1-6
+const color1 = document.querySelector(".js-color1");
+const color2 = document.querySelector(".js-color2");
+const color3 = document.querySelector(".js-color3");
+const color4 = document.querySelector(".js-color4");
+const color5 = document.querySelector(".js-color5");
+const color6 = document.querySelector(".js-color6");
+
+// const colors = ["color1", "color2", "color3", "color4", "color5", "color6"];
+const colorsData = document.querySelector(".js-colorsData");
+
 //recogemos del html los elementos que queremos cambiar de color (nombre, profession, linea)
 const nameCheck = document.querySelector(".viewer__image-name");
 const professionCheck = document.querySelector(".viewer__image-profession");
@@ -108,6 +119,46 @@ function changeColor() {
   }
 }
 
+//Creamos las funciones para almacenar y recuperar los datos de la paleta seleccionada.
+const handleColorData = () => {
+  const colorData = {
+    palette1: color1.checked,
+    palette2: color2.checked,
+    palette3: color3.checked,
+    palette4: color4.checked,
+    palette5: color5.checked,
+    palette6: color6.checked
+  };
+
+  localStorage.setItem("userColorData", JSON.stringify(colorData));
+};
+
+const getColorsFromLocalStorage = () => {
+  const getColorData = JSON.parse(localStorage.getItem("userColorData"));
+  if (color1.checked === true) {
+    getColorData.color1;
+  }
+  if (color2.checked === true) {
+    getColorData.color2;
+  }
+  if (color3.checked === true) {
+    getColorData.color3;
+  }
+  if (color4.checked === true) {
+    getColorData.color4;
+  }
+  if (color5.checked === true) {
+    getColorData.color5;
+  }
+  if (color6.checked === true) {
+    getColorData.color6;
+  }
+  // color2.checked = getColorData.color2;
+  // color3.checked = getColorData.color3;
+  // color4.checked = getColorData.color4;
+  // color5.checked = getColorData.color5;
+  // color6.checked = getColorData.color6;
+};
 //eventos para cada radio, escuchamos el click y ejecutamos la funcion 'changeColor'
 colorCheck1.addEventListener("click", changeColor);
 colorCheck2.addEventListener("click", changeColor);
@@ -115,3 +166,5 @@ colorCheck3.addEventListener("click", changeColor);
 colorCheck4.addEventListener("click", changeColor);
 colorCheck5.addEventListener("click", changeColor);
 colorCheck6.addEventListener("click", changeColor);
+colorsData.addEventListener("click", handleColorData);
+getColorsFromLocalStorage();
