@@ -57,7 +57,7 @@ function upgradeLinkedin(event) {
   }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
 }
 
-function upgradeGithubn(event) {
+function upgradeGithub(event) {
   const mail = event.currentTarget;
   for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[3].innerHTML = `<a href="https://github.com/${
@@ -88,14 +88,23 @@ const getLocalStorage = () => {
   tel.value = getData.tel;
   linkedin.value = getData.linkedin;
   github.value = getData.github;
+  upgradeDataViewer();
 };
 
+const upgradeDataViewer = () => {
+  upgradeName();
+  upgradeJob();
+  upgradeMail();
+  upgradeTel();
+  upgradeLinkedin();
+  upgradeGithub();
+};
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
 fullName.addEventListener("keyup", upgradeName);
 job.addEventListener("keyup", upgradeJob);
 mail.addEventListener("keyup", upgradeMail);
 tel.addEventListener("keyup", upgradeTel);
 linkedin.addEventListener("keyup", upgradeLinkedin);
-github.addEventListener("keyup", upgradeGithubn);
+github.addEventListener("keyup", upgradeGithub);
 formData.addEventListener("keyup", handleFormData);
 getLocalStorage();
