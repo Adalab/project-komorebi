@@ -133,7 +133,7 @@ function previewImage(ev) {
   reader.readAsDataURL(ev.target.files[0]);
 
   // Le decimos que cuando este listo ejecute el código interno
-  reader.onload = function () {
+  reader.onload = function() {
     let image = document.createElement("img");
 
     image.src = reader.result; //modificamos la ruta de la imagen con la ruta del archivo subido
@@ -141,12 +141,12 @@ function previewImage(ev) {
     //cambiamos el html del div para poner la imagen pero con la nueva ruta
     preview.innerHTML = `<img src="${
       image.src
-      }" alt="image user" class="folded__form__input2--image" />`;
+    }" alt="image user" class="folded__form__input2--image" />`;
 
     //lo mismo, pero para el div de la foto grande
     userPreview.innerHTML = `<img src="${
       image.src
-      }" alt="image user" class="viewer__profile-picture-image" />`;
+    }" alt="image user" class="viewer__profile-picture-image" />`;
   };
 }
 //evento del boton añadir imagen, que al hacer "change", ejecuta la funcion previewImage
@@ -167,7 +167,7 @@ const viewerName = document.querySelector(".js-Name");
 const viewerJob = document.querySelector(".js-Job");
 
 // vamos a recoger los datos del form en localStore
-const formData = document.querySelector('.js-form');
+const formData = document.querySelector(".js-form");
 
 const handleFormData = () => {
   const data = {
@@ -179,11 +179,11 @@ const handleFormData = () => {
     github: github.value
   };
 
-  localStorage.setItem('userData', JSON.stringify(data));
+  localStorage.setItem("userData", JSON.stringify(data));
 };
 
 const getLocalStorage = () => {
-  const getData = JSON.parse(localStorage.getItem('userData'));
+  const getData = JSON.parse(localStorage.getItem("userData"));
   fullName.value = getData.name;
   job.value = getData.job;
   mail.value = getData.mail;
@@ -196,8 +196,8 @@ const getLocalStorage = () => {
 // para decir que un imput esta vacio se escribe asi === ''
 function upgradeName(event) {
   viewerName.innerHTML = `${fullName.value}`;
-  if (fullName.value === '') {
-    viewerName.innerHTML = 'Nombre Apellido';
+  if (fullName.value === "") {
+    viewerName.innerHTML = "Nombre Apellido";
   }
 }
 
@@ -205,50 +205,50 @@ function upgradeName(event) {
 function upgradeJob(event) {
   // const job = event.currentTarget;
   viewerJob.innerHTML = `${job.value}`;
-  if (job.value === '') {
-    viewerJob.innerHTML = 'Front-end developer';
+  if (job.value === "") {
+    viewerJob.innerHTML = "Front-end developer";
   }
 }
 
 function upgradeTel(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) { }
+  for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[0].innerHTML = `<a href="tel:${
     mail.value
-    }" target="_blank"><i class="fas fa-mobile-alt"></i></a>`;
+  }" target="_blank"><i class="fas fa-mobile-alt"></i></a>`;
 }
 
 function upgradeMail(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) { }
+  for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[1].innerHTML = `<a href="mailto:${
     mail.value
-    }" target="_blank"><i class="far fa-envelope"></i></a>`;
+  }" target="_blank"><i class="far fa-envelope"></i></a>`;
 }
 
 function upgradeLinkedin(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) { }
+  for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[2].innerHTML = `<a href="https://www.${
     mail.value
-    }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
+  }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
 }
 
 function upgradeGithubn(event) {
   const mail = event.currentTarget;
-  for (let a = 0; a < iconsCheck.length; a++) { }
+  for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[3].innerHTML = `<a href="https://github.com/${
     mail.value
     // eslint-disable-next-line indent
-    }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
+  }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
 }
 
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
-fullName.addEventListener('keyup', upgradeName);
-job.addEventListener('keyup', upgradeJob);
-mail.addEventListener('keyup', upgradeMail);
-tel.addEventListener('keyup', upgradeTel);
-linkedin.addEventListener('keyup', upgradeLinkedin);
-github.addEventListener('keyup', upgradeGithubn);
-formData.addEventListener('keyup', handleFormData);
+fullName.addEventListener("keyup", upgradeName);
+job.addEventListener("keyup", upgradeJob);
+mail.addEventListener("keyup", upgradeMail);
+tel.addEventListener("keyup", upgradeTel);
+linkedin.addEventListener("keyup", upgradeLinkedin);
+github.addEventListener("keyup", upgradeGithubn);
+formData.addEventListener("keyup", handleFormData);
 getLocalStorage();

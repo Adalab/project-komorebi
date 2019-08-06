@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    cursor: pointer;
   }
   &__buttom-reset {
     font-family: $fontMain;
@@ -218,13 +219,8 @@
     width: 240px;
     height: 200px;
     //background-image: url("../images/natalie-portman.jpg");
-    //background-size: cover;
-  }
-
-  &__profile-picture-image {
-    width: 240px;
-    height: 200px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
   }
 
   &__icons {
@@ -307,14 +303,12 @@
   margin-right: 10px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: $tabletSize) {
   .viewer {
     &__container-background {
       margin-top: 20px;
-      height: 100vh;
+      height: 75vh;
       border-radius: 6px;
-      padding-top: 173px;
-      justify-content: flex-start;
       background: opacify($color: transparent, $amount: 0);
     }
   }

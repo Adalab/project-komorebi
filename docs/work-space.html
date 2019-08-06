@@ -22,18 +22,18 @@
     </head>
     
     <body>
-        <div class="viewer__header"> <a href="../index.html">
+        <div class="viewer__header"> <a href="./index.html">
 
-        <div class="viewer__logo"></div>
+    <div class="viewer__logo"></div>
 
-    </a>
+  </a>
         </div>
         <section class="section__mediasq">
             <div class="visor__mediasq">
                 <section class="viewer">
                     <div class="viewer__container-background">
                         <div class="viewer__container-buttom-image">
-                            <buttom class="viewer__buttom"> <i class="far fa-trash-alt"></i>
+                            <buttom class="viewer__buttom" id="reset"> <i class="far fa-trash-alt"></i>
                                 <p class="viewer__buttom-reset">RESET</p>
                             </buttom>
                             <div class="viewer__image-container">
@@ -48,10 +48,7 @@
                                          <h3 class="viewer__image-profession js-Job">Front-end developer</h3>
                                     </div>
                                 </div>
-                                <div class="viewer__profile-picture">
-                                    <img src="./assets/images/natalie-portman.jpg" alt="" class="viewer__profile-picture-image"
-                                    />
-                                </div>
+                                <div class="viewer__profile-picture js__profile-image" style="background-image:url(./assets/images/natalie-portman.jpg)"></div>
                                 <div class="viewer__icons">
                                     <div class="viewer__icon-style"> <i class="fas fa-mobile-alt"></i>
                                     </div>
@@ -68,152 +65,138 @@
                 </section>
             </div>
             <div class="workSpace">
-                <form action="">
-                    <section class="design">
-                        <div class="design__box">
+                <form action="" id="form">
+                    <section class="design js-collapsable">
+                        <div class="design__box js-collapsable-header">
                             <div class="form__box__position"> <i class="far fa-object-ungroup fa-object-ungroup--design"></i>
                                  <h2 class="design__title">DISEÑA</h2>
-                            </div> <i class="fas fa-angle-up fa-angle-up--design"></i>
+                            </div> <i class="fas fa-angle-down fa-angle-up--design"></i>
                         </div>
-                        <div class="design__form">
-                             <h3 class="design__subtitle">COLORES</h3>
-                            <div class="design__form--items">
-                                <label for="design1" class="color__box">
-                                    <input class="form__item" type="radio" value="color1" name="design" id="design1"
-                                    />
-                                    <label for="design1" class="radio_btn"></label>
-                                    <div class="color__one--one"></div>
-                                    <div class="color__two--one"></div>
-                                    <div class="color__three--one"></div>
-                                </label>
-                                <label for="design2" class="color__box">
-                                    <input class="form__item" type="radio" value="color2" name="design" id="design2"
-                                    />
-                                    <label for="design2" class="radio_btn"></label>
-                                    <div class="color__one--two"></div>
-                                    <div class="color__two--two"></div>
-                                    <div class="color__three--two"></div>
-                                </label>
-                                <label for="design3" class="color__box">
-                                    <input class="form__item" type="radio" value="color3" name="design" id="design3"
-                                    />
-                                    <label for="design3" class="radio_btn"></label>
-                                    <div class="color__one--three"></div>
-                                    <div class="color__two--three"></div>
-                                    <div class="color__three--three"></div>
-                                </label>
-                                <label for="design4" class="color__box">
-                                    <input class="form__item" type="radio" value="color4" name="design" id="design4"
-                                    />
-                                    <label for="design4" class="radio_btn"></label>
-                                    <div class="color__one--four"></div>
-                                    <div class="color__two--four"></div>
-                                    <div class="color__three--four"></div>
-                                </label>
-                                <label for="design5" class="color__box">
-                                    <input class="form__item" type="radio" value="color5" name="design" id="design5"
-                                    />
-                                    <label for="design5" class="radio_btn"></label>
-                                    <div class="color__one--five"></div>
-                                    <div class="color__two--five"></div>
-                                    <div class="color__three--five"></div>
-                                </label>
-                                <label for="design6" class="color__box">
-                                    <input class="form__item" type="radio" value="color6" name="design" id="design6"
-                                    />
-                                    <label for="design6" class="radio_btn"></label>
-                                    <div class="color__one--six"></div>
-                                    <div class="color__two--six"></div>
-                                    <div class="color__three--six"></div>
-                                </label>
+                        <div class="content">
+                            <div class="design__form ">
+                                 <h3 class="design__subtitle">COLORES</h3>
+                                <div class="design__form--items">
+                                    <label for="design1" class="color__box">
+                                        <input class="form__item" type="radio" value="color1" name="design" id="design1"
+                                        />
+                                        <label for="design1" class="radio_btn"></label>
+                                        <div class="color__one--one"></div>
+                                        <div class="color__two--one"></div>
+                                        <div class="color__three--one"></div>
+                                    </label>
+                                    <label for="design2" class="color__box">
+                                        <input class="form__item" type="radio" value="color2" name="design" id="design2"
+                                        />
+                                        <label for="design2" class="radio_btn"></label>
+                                        <div class="color__one--two"></div>
+                                        <div class="color__two--two"></div>
+                                        <div class="color__three--two"></div>
+                                    </label>
+                                    <label for="design3" class="color__box">
+                                        <input class="form__item" type="radio" value="color3" name="design" id="design3"
+                                        />
+                                        <label for="design3" class="radio_btn"></label>
+                                        <div class="color__one--three"></div>
+                                        <div class="color__two--three"></div>
+                                        <div class="color__three--three"></div>
+                                    </label>
+                                    <label for="design4" class="color__box">
+                                        <input class="form__item" type="radio" value="color4" name="design" id="design4"
+                                        />
+                                        <label for="design4" class="radio_btn"></label>
+                                        <div class="color__one--four"></div>
+                                        <div class="color__two--four"></div>
+                                        <div class="color__three--four"></div>
+                                    </label>
+                                    <label for="design5" class="color__box">
+                                        <input class="form__item" type="radio" value="color5" name="design" id="design5"
+                                        />
+                                        <label for="design5" class="radio_btn"></label>
+                                        <div class="color__one--five"></div>
+                                        <div class="color__two--five"></div>
+                                        <div class="color__three--five"></div>
+                                    </label>
+                                    <label for="design6" class="color__box">
+                                        <input class="form__item" type="radio" value="color6" name="design" id="design6"
+                                        />
+                                        <label for="design6" class="radio_btn"></label>
+                                        <div class="color__one--six"></div>
+                                        <div class="color__two--six"></div>
+                                        <div class="color__three--six"></div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </section>
-                    <section class="folded__menu">
-                        <div class="form__box">
+                    <section class="folded__menu js-collapsable">
+                        <div class="form__box js-collapsable-header">
                             <div class="form__box__position"> <i class="far fa-keyboard fa-keyboard--design"></i>
                                  <h2 class="form__title">RELLENA</h2>
-                            </div> <i class="fas fa-angle-up fa-angle-down--design"></i>
+                            </div> <i class="fas fa-angle-down fa-angle-up--design"></i>
                         </div>
-                        <div class="folded__form">
-                            <label for="fullName" class="folded__form__label" id="fullName">Nombre completo</label>
-                            <input placeholder="Ej: Sally Jill" id="fullName"
-                            type="text" name="fullName" class="folded__form__input inputName" />
-                            <label for="profession" class="folded__form__label">Puesto</label>
-                            <input placeholder="Ej: Front-end unicorn" id="profession"
-                            type="text" name="profession" class="folded__form__input inputJob" />
-                            <label for="image" class="folded__form__label">Imagen de perfil</label>
-                            <div class="folded__form__section">
-                                <label for="image" class="folded__form__btnAdd">Añadir Imagen</label>
-                                <input type="file" name="image" id="image" class="folded__form__inputFile"
+                        <div class="content">
+                            <div class="folded__form">
+                                <label for="fullName" class="folded__form__label" id="fullName">Nombre completo</label>
+                                <input placeholder="Ej: Sally Jill" id="fullName"
+                                type="text" name="fullName" class="folded__form__input inputName" />
+                                <label for="profession" class="folded__form__label">Puesto</label>
+                                <input placeholder="Ej: Front-end unicorn" id="profession"
+                                type="text" name="profession" class="folded__form__input inputJob" />
+                                <label for="image" class="folded__form__label">Imagen de perfil</label>
+                                <div class="folded__form__section">
+                                    <buttton for="image" class="folded__form__btnAdd js__profile-trigger">Añadir Imagen</buttton>
+                                    <input type="file" name="image" id="image" class="folded__form__inputFile js__profile-upload-btn"
+                                    />
+                                    <div class="folded__form__input2 js__profile-preview"></div>
+                                </div>
+                                <label for="emailAddress" class="folded__form__label">Correo electrónico</label>
+                                <input placeholder="Ej: sally-hill@gmail.com"
+                                type="email" id="emailAddress" name="emailAddress" class="folded__form__input mail"
                                 />
-                                <div class="folded__form__input2"></div>
+                                <label for="telephone" class="folded__form__label">Teléfono</label>
+                                <input placeholder="Ej: 555-55-55-55" type="tel" id="telephone"
+                                name="telephone" class="folded__form__input tel" />
+                                <label for="Linkedin" class="folded__form__label">Linkedin</label>
+                                <input placeholder="Ej: linkedin.com/in/sally.hill" id="Linkedin"
+                                type="text" name="Linkedin" class="folded__form__input linkedin" />
+                                <label for="Github" class="folded__form__label">Github</label>
+                                <input placeholder="Ej: sally-hill" type="text" id="Github"
+                                name="Github" class="folded__form__input Github" />
                             </div>
-                            <label for="emailAddress" class="folded__form__label">Correo electrónico</label>
-                            <input placeholder="Ej: sally-hill@gmail.com"
-                            type="email" id="emailAddress" name="emailAddress" class="folded__form__input mail"
-                            />
-                            <label for="telephone" class="folded__form__label">Teléfono</label>
-                            <input placeholder="Ej: 555-55-55-55" type="tel" id="telephone"
-                            name="telephone" class="folded__form__input tel" />
-                            <label for="Linkedin" class="folded__form__label">Linkedin</label>
-                            <input placeholder="Ej: linkedin.com/in/sally.hill" id="Linkedin"
-                            type="text" name="Linkedin" class="folded__form__input linkedin" />
-                            <label for="Github" class="folded__form__label">Github</label>
-                            <input placeholder="Ej: sally-hill" type="text" id="Github"
-                            name="Github" class="folded__form__input Github" />
                         </div>
                     </section>
-                    <section class="folded__menu">
-                        <div class="share__box">
+                    <section class="folded__menu js-collapsable">
+                        <div class="share__box js-collapsable-header">
                             <div class="share__box__position"> <i class="fas fa-share-alt fa-keyboard--design"></i>
                                  <h2 class="share__title">COMPARTE</h2>
-                            </div> <i class="fas fa-angle-up fa-angle-down--design"></i>
+                            </div> <i class="fas fa-angle-down fa-angle-up--design"></i>
                         </div>
-                        <div class="share__button">
-                            <button type="submit" class="share__button--orange"> <i class="far fa-address-card share__button--orange--icon"></i>
-                                 <h2 class="share__button--orange--text">CREAR TARJETA</h2>
-                            </button>
+                        <div class="content">
+                            <div class="share__button">
+                                <button type="submit" class="share__button--orange"> <i class="far fa-address-card share__button--orange--icon"></i>
+                                     <h2 class="share__button--orange--text">CREAR TARJETA</h2>
+                                </button>
+                            </div>
+                            <section class="hidden js-shareMessage">
+                                <div class="share__message__content">
+                                     <h3 class="share__message__text">La tarjeta ha sido creada:</h3> <a href="#" class="share__message__link-share">https://awesome-profile-card.com?id=A456DF0001</a>
+                                    <button
+                                    class="share__button--blue"> <i class="fab fa-twitter share__button__icon"></i>
+                                         <h2 class="share__button--text">Compartir en Twitter</h2>
+                                        </button>
+                                </div>
+                            </section>
                         </div>
                     </section>
-                    <section class="share__message">
-                        <div class="share__message__content">
-                             <h3 class="share__message__text">La tarjeta ha sido creada:</h3> <a href="#" class="share__message__link-share">https://awesome-profile-card.com?id=A456DF0001</a
-
-    >
-
-    <button class="share__button--blue">
-
-      <i class="fab fa-twitter share__button__icon"></i>
-
-      <h2 class="share__button--text">Compartir en Twitter</h2>
-
-    </button>
-
-  </div>
-
-</section>
-
-
-
-        </form>
-
-      </div>
-
-    </section>
-
-    <footer class="footer"> <small class="footer__product-signature">Awesome profile-cards @2018</small>
-
-    <img
-    src="./assets/images/logo-adalab-footer.png" alt="Una app de Adalab" class="footer__logo"
-    />
-</footer>
-
-
-
-    <script src="./assets/js/main.js"></script>
-
-  </body>
+                </form>
+            </div>
+        </section>
+        <footer class="footer"> <small class="footer__product-signature">Awesome profile-cards @2018</small>
+            <img
+            src="./assets/images/logo-adalab-footer.png" alt="Una app de Adalab" class="footer__logo"
+            />
+        </footer>
+        <script src="./assets/js/main.js"></script>
+    </body>
 
 </html>
-
