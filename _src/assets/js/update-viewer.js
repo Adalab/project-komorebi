@@ -100,11 +100,11 @@ const upgradeDataViewer = () => {
   upgradeGithub();
 };
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
-fullName.addEventListener("keyup", upgradeName);
-job.addEventListener("keyup", upgradeJob);
-mail.addEventListener("keyup", upgradeMail);
-tel.addEventListener("keyup", upgradeTel);
-linkedin.addEventListener("keyup", upgradeLinkedin);
-github.addEventListener("keyup", upgradeGithub);
-formData.addEventListener("keyup", handleFormData);
+fullName.addEventListener("keyup", upgradeDataViewer);
+job.addEventListener("keyup", upgradeDataViewer);
+mail.addEventListener("keyup", upgradeDataViewer);
+tel.addEventListener("keyup", upgradeDataViewer);
+linkedin.addEventListener("keyup", upgradeDataViewer);
+github.addEventListener("keyup", upgradeDataViewer);
+formData.addEventListener("keyup", upgradeDataViewer);
 getLocalStorage();
