@@ -26,39 +26,34 @@ function upgradeName() {
 
 // esta función hace que al borrar el input vuelva a estar relleno con los datos de ejemplo
 function upgradeJob() {
-  //const job = event.currentTarget;
   viewerJob.innerHTML = `${job.value}`;
   if (job.value === "") {
     viewerJob.innerHTML = "Front-end developer";
   }
 }
 
-function upgradeTel(event) {
-  const mail = event.currentTarget;
+function upgradeTel() {
   for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[0].innerHTML = `<a href="tel:${
-    mail.value
+    tel.value
   }" target="_blank"><i class="fas fa-mobile-alt"></i></a>`;
 }
 
-function upgradeMail(event) {
-  const mail = event.currentTarget;
+function upgradeMail() {
   for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[1].innerHTML = `<a href="mailto:${
     mail.value
   }" target="_blank"><i class="far fa-envelope"></i></a>`;
 }
 
-function upgradeLinkedin(event) {
-  const mail = event.currentTarget;
+function upgradeLinkedin() {
   for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[2].innerHTML = `<a href="https://www.${
     mail.value
   }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
 }
 
-function upgradeGithub(event) {
-  const mail = event.currentTarget;
+function upgradeGithub() {
   for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[3].innerHTML = `<a href="https://github.com/${
     mail.value
@@ -67,8 +62,10 @@ function upgradeGithub(event) {
 
 //Creamos una función para almacenar los datos introducidos en el localStorage.
 const handleFormData = () => {
+  console.log(palette);
   const data = {
-    name: fullName.value,
+    paleta: palette,
+    nombre: fullName.value,
     job: job.value,
     mail: mail.value,
     tel: tel.value,
@@ -108,3 +105,7 @@ linkedin.addEventListener("keyup", upgradeDataViewer);
 github.addEventListener("keyup", upgradeDataViewer);
 formData.addEventListener("keyup", handleFormData);
 getLocalStorage();
+
+for (let i = 0; i < colorCheck.length; i++) {
+  colorCheck[i].addEventListener("click", handleFormData);
+}
