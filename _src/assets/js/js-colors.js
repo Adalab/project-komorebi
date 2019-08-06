@@ -1,3 +1,4 @@
+"use strict";
 //recogemos el radio para poder saber cual está seleccionado
 const colorCheck = document.querySelectorAll(".form__item");
 
