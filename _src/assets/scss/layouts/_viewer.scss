@@ -219,13 +219,8 @@
     width: 240px;
     height: 200px;
     //background-image: url("../images/natalie-portman.jpg");
-    //background-size: cover;
-  }
-
-  &__profile-picture-image {
-    width: 240px;
-    height: 200px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
   }
 
   &__icons {

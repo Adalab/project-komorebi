@@ -6,8 +6,8 @@ const form = document.getElementById("form");
 function resetViewer() {
   viewerName.innerHTML = `Nombre Apellido`;
   viewerJob.innerHTML = `Front-end developer`;
-  preview.innerHTML = ``;
-  userPreview.innerHTML = `<img src="./assets/images/natalie-portman.jpg" alt="image user" class="viewer__profile-picture-image" />`;
+  profileImage.style.backgroundImage = `url(./assets/images/natalie-portman.jpg)`;
+  profilePreview.style.backgroundImage = `url()`;
   for (let a = 0; a < iconsCheck.length; a++) {
     iconsCheck[0].innerHTML = `<i class="fas fa-mobile-alt"></i></a>`;
     iconsCheck[1].innerHTML = `<i class="far fa-envelope"></i></a>`;

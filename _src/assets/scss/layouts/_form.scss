@@ -93,12 +93,8 @@
     height: 30px;
     width: 30px;
     margin-bottom: 20px;
-  }
-
-  &__input2--image {
-    height: 28px;
-    width: 28px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
   }
 }
 
