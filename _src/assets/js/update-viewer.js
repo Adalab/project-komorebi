@@ -106,5 +106,5 @@ mail.addEventListener("keyup", upgradeDataViewer);
 tel.addEventListener("keyup", upgradeDataViewer);
 linkedin.addEventListener("keyup", upgradeDataViewer);
 github.addEventListener("keyup", upgradeDataViewer);
-formData.addEventListener("keyup", upgradeDataViewer);
+formData.addEventListener("keyup", handleFormData);
 getLocalStorage();
