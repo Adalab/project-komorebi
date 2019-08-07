@@ -48,15 +48,15 @@ function upgradeMail() {
 
 function upgradeLinkedin() {
   for (let a = 0; a < iconsCheck.length; a++) {}
-  iconsCheck[2].innerHTML = `<a href="https://www.${
-    mail.value
+  iconsCheck[2].innerHTML = `<a href="https://www.linkedin.com/in/${
+    linkedin.value
   }" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
 }
 
 function upgradeGithub() {
   for (let a = 0; a < iconsCheck.length; a++) {}
   iconsCheck[3].innerHTML = `<a href="https://github.com/${
-    mail.value
+    github.value
   }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
 }
 
@@ -75,7 +75,6 @@ const handleFormData = () => {
   } else {
     src = `${fr.result}`;
   }
-
   const data = {
     palette: palette,
     name: fullName.value,
@@ -138,3 +137,49 @@ getLocalStorage();
 for (let i = 0; i < colorCheck.length; i++) {
   colorCheck[i].addEventListener("click", handleFormData);
 }
+
+//------------ COMPARTE --------------------
+
+const shareBtn = document.querySelector(".js-shareBtn");
+const shareLink = document.querySelector(".js-shareLink");
+const twitterLink = document.querySelector(".js-twitterLink");
+const shareMessage = document.querySelector(".js-shareMessage");
+
+function createCard(ev) {
+  ev.preventDefault();
+  const userData = {
+    palette: palette,
+    name: fullName.value,
+    job: job.value,
+    email: mail.value,
+    phone: tel.value,
+    linkedin: linkedin.value,
+    github: github.value,
+    photo: fr.result
+  };
+  fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
+    method: "POST",
+    body: JSON.stringify(userData),
+    headers: {
+      "content-type": "application/json"
+    }
+  })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      console.log(data);
+      console.log(data.cardURL);
+      shareLink.innerHTML = `${data.cardURL}`;
+      shareLink.setAttribute("href", `${data.cardURL}`);
+      twitterLink.setAttribute(
+        "href",
+        `https://twitter.com/intent/tweet?text= Aquí os dejo mi tarjeta de presentación: ${
+          data.cardURL
+        }`
+      );
+      shareMessage.classList.remove("hidden");
+    });
+}
+
+shareBtn.addEventListener("click", createCard);

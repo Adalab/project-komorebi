@@ -23,6 +23,7 @@
     font-size: 12px;
     color: $dull-orange;
     margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -36,6 +37,10 @@
   height: 30px;
   border-radius: 3px;
   margin-bottom: 30px;
+}
+
+.twitterLink {
+  text-decoration: none;
 }
 
 .share__button__icon {
