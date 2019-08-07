@@ -123,7 +123,9 @@ const upgradeDataViewer = () => {
   upgradeLinkedin();
   upgradeGithub();
   changeColor();
+  upgradeImage();
 };
+
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
 fullName.addEventListener("keyup", upgradeDataViewer);
 job.addEventListener("keyup", upgradeDataViewer);
@@ -170,6 +172,7 @@ function createCard(ev) {
     .then(function(data) {
       console.log(data);
       console.log(data.cardURL);
+
       shareLink.innerHTML = `${data.cardURL}`;
       shareLink.setAttribute("href", `${data.cardURL}`);
       twitterLink.setAttribute(
