@@ -135,33 +135,36 @@
                             </div> <i class="fas fa-angle-down fa-angle-up--design"></i>
                         </div>
                         <div class="content">
-                            <div class="folded__form">
+                            <div class="folded__form js-form">
                                 <label for="fullName" class="folded__form__label" id="fullName">Nombre completo</label>
                                 <input placeholder="Ej: Sally Jill" id="fullName"
-                                type="text" name="fullName" class="folded__form__input inputName" />
+                                type="text" name="fullName" class="folded__form__input inputName" maxlength="20"
+                                required />
                                 <label for="profession" class="folded__form__label">Puesto</label>
                                 <input placeholder="Ej: Front-end unicorn" id="profession"
-                                type="text" name="profession" class="folded__form__input inputJob" />
+                                type="text" name="profession" class="folded__form__input inputJob" maxlength="25"
+                                required />
                                 <label for="image" class="folded__form__label">Imagen de perfil</label>
                                 <div class="folded__form__section">
                                     <buttton for="image" class="folded__form__btnAdd js__profile-trigger">Añadir Imagen</buttton>
                                     <input type="file" name="image" id="image" class="folded__form__inputFile js__profile-upload-btn"
-                                    />
+                                    required />
                                     <div class="folded__form__input2 js__profile-preview"></div>
                                 </div>
                                 <label for="emailAddress" class="folded__form__label">Correo electrónico</label>
                                 <input placeholder="Ej: sally-hill@gmail.com"
                                 type="email" id="emailAddress" name="emailAddress" class="folded__form__input mail"
-                                />
+                                required />
                                 <label for="telephone" class="folded__form__label">Teléfono</label>
                                 <input placeholder="Ej: 555-55-55-55" type="tel" id="telephone"
                                 name="telephone" class="folded__form__input tel" />
                                 <label for="Linkedin" class="folded__form__label">Linkedin</label>
                                 <input placeholder="Ej: linkedin.com/in/sally.hill" id="Linkedin"
-                                type="text" name="Linkedin" class="folded__form__input linkedin" />
+                                type="text" name="Linkedin" class="folded__form__input linkedin" required
+                                />
                                 <label for="Github" class="folded__form__label">Github</label>
                                 <input placeholder="Ej: sally-hill" type="text" id="Github"
-                                name="Github" class="folded__form__input Github" />
+                                name="Github" class="folded__form__input Github" required />
                             </div>
                         </div>
                     </section>
@@ -173,17 +176,32 @@
                         </div>
                         <div class="content">
                             <div class="share__button">
-                                <button type="submit" class="share__button--orange"> <i class="far fa-address-card share__button--orange--icon"></i>
+                                <button type="submit" class="share__button--orange js-shareBtn"> <i class="far fa-address-card share__button--orange--icon"></i>
                                      <h2 class="share__button--orange--text">CREAR TARJETA</h2>
                                 </button>
                             </div>
                             <section class="hidden js-shareMessage">
                                 <div class="share__message__content">
-                                     <h3 class="share__message__text">La tarjeta ha sido creada:</h3> <a href="#" class="share__message__link-share">https://awesome-profile-card.com?id=A456DF0001</a>
-                                    <button
-                                    class="share__button--blue"> <i class="fab fa-twitter share__button__icon"></i>
-                                         <h2 class="share__button--text">Compartir en Twitter</h2>
-                                        </button>
+                                     <h3 class="share__message__text">La tarjeta ha sido creada:</h3> <a href="#" class="share__message__link-share js-shareLink" target="_blank">https://awesome-profile-card.com?id=A456DF0001</a
+
+    >
+
+    <a href="" class="twitterLink js-twitterLink" target="_blank">
+
+      <div class="share__button--blue">
+
+        <i class="fab fa-twitter share__button__icon"></i>
+
+        <h2 class="share__button--text">Compartir en Twitter</h2>
+
+      </div>
+
+    </a>
+                                </div>
+                            </section>
+                            <section class="hidden js-shareError">
+                                <div class="share__Error__content">
+                                     <h3 class="share__Error__text js-error-text"></h3>
                                 </div>
                             </section>
                         </div>
