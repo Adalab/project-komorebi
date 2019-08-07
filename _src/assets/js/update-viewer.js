@@ -60,17 +60,31 @@ function upgradeGithub() {
   }" target="_blank"><i class="fab fa-github-alt"></i></a>`;
 }
 
+let srcPhoto;
+let src;
+function upgradeImage() {
+  profileImage.style.backgroundImage = `url(${srcPhoto})`;
+  profilePreview.style.backgroundImage = `url(${srcPhoto})`;
+}
+
 //Creamos una función para almacenar los datos introducidos en el localStorage.
 const handleFormData = () => {
   console.log(palette);
+  if (fr.result === null) {
+    src = "./assets/images/natalie-portman.jpg";
+  } else {
+    src = `${fr.result}`;
+  }
+
   const data = {
-    paleta: palette,
-    nombre: fullName.value,
+    palette: palette,
+    name: fullName.value,
     job: job.value,
     mail: mail.value,
-    tel: tel.value,
+    phone: tel.value,
     linkedin: linkedin.value,
-    github: github.value
+    github: github.value,
+    photo: src
   };
 
   localStorage.setItem("userData", JSON.stringify(data));
@@ -82,9 +96,23 @@ const getLocalStorage = () => {
   fullName.value = getData.name;
   job.value = getData.job;
   mail.value = getData.mail;
-  tel.value = getData.tel;
+  tel.value = getData.phone;
   linkedin.value = getData.linkedin;
   github.value = getData.github;
+  srcPhoto = getData.photo;
+  if (getData.palette === "1") {
+    colorCheck1.checked = true;
+  } else if (getData.palette === "2") {
+    colorCheck2.checked = true;
+  } else if (getData.palette === "3") {
+    colorCheck3.checked = true;
+  } else if (getData.palette === "4") {
+    colorCheck4.checked = true;
+  } else if (getData.palette === "5") {
+    colorCheck5.checked = true;
+  } else if (getData.palette === "6") {
+    colorCheck6.checked = true;
+  }
   upgradeDataViewer();
 };
 
@@ -95,6 +123,7 @@ const upgradeDataViewer = () => {
   upgradeTel();
   upgradeLinkedin();
   upgradeGithub();
+  changeColor();
 };
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
 fullName.addEventListener("keyup", upgradeDataViewer);
