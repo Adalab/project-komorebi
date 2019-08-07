@@ -113,7 +113,7 @@ const shareButton = document.querySelector('.js-shareButton');
 
 
 const data = {
-  "palette": 1,
+  "palette": palette,
   "name": fullName.value,
   "job": job.value,
   "phone": tel.value,
