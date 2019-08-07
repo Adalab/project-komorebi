@@ -123,7 +123,7 @@ const upgradeDataViewer = () => {
   upgradeLinkedin();
   upgradeGithub();
   changeColor();
-  upgradeImage();
+  //upgradeImage();
 };
 
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
