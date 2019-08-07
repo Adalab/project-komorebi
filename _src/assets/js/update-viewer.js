@@ -177,9 +177,7 @@ function createCard(ev) {
       shareLink.setAttribute("href", `${data.cardURL}`);
       twitterLink.setAttribute(
         "href",
-        `https://twitter.com/intent/tweet?text= Aquí os dejo mi tarjeta de presentación: ${
-          data.cardURL
-        }`
+        `https://twitter.com/intent/tweet?text=${data.cardURL}`
       );
       shareMessage.classList.remove("hidden");
     });
