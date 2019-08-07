@@ -26,8 +26,9 @@ function writeImage() {
   /* En la propiedad `result` de nuestro FR se almacena
    * el resultado
    */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  srcPhoto = fr.result;
+  upgradeImage();
+  handleFormData();
 }
 
 /**

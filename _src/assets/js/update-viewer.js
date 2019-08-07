@@ -69,12 +69,8 @@ function upgradeImage() {
 
 //Creamos una función para almacenar los datos introducidos en el localStorage.
 const handleFormData = () => {
+  debugger;
   console.log(palette);
-  if (fr.result === null) {
-    src = "./assets/images/natalie-portman.jpg";
-  } else {
-    src = `${fr.result}`;
-  }
   const data = {
     palette: palette,
     name: fullName.value,
@@ -83,7 +79,7 @@ const handleFormData = () => {
     phone: tel.value,
     linkedin: linkedin.value,
     github: github.value,
-    photo: src
+    photo: srcPhoto
   };
 
   localStorage.setItem("userData", JSON.stringify(data));
@@ -92,27 +88,30 @@ const handleFormData = () => {
 //Creamos una función para recuperar los últimos datos almacenados en el localStorage.
 const getLocalStorage = () => {
   const getData = JSON.parse(localStorage.getItem("userData"));
-  fullName.value = getData.name;
-  job.value = getData.job;
-  mail.value = getData.mail;
-  tel.value = getData.phone;
-  linkedin.value = getData.linkedin;
-  github.value = getData.github;
-  srcPhoto = getData.photo;
-  if (getData.palette === "1") {
-    colorCheck1.checked = true;
-  } else if (getData.palette === "2") {
-    colorCheck2.checked = true;
-  } else if (getData.palette === "3") {
-    colorCheck3.checked = true;
-  } else if (getData.palette === "4") {
-    colorCheck4.checked = true;
-  } else if (getData.palette === "5") {
-    colorCheck5.checked = true;
-  } else if (getData.palette === "6") {
-    colorCheck6.checked = true;
+  if (getData) {
+    fullName.value = getData.name;
+    job.value = getData.job;
+    mail.value = getData.mail;
+    tel.value = getData.phone;
+    linkedin.value = getData.linkedin;
+    github.value = getData.github;
+    srcPhoto = getData.photo;
+
+    if (getData.palette === "1") {
+      colorCheck1.checked = true;
+    } else if (getData.palette === "2") {
+      colorCheck2.checked = true;
+    } else if (getData.palette === "3") {
+      colorCheck3.checked = true;
+    } else if (getData.palette === "4") {
+      colorCheck4.checked = true;
+    } else if (getData.palette === "5") {
+      colorCheck5.checked = true;
+    } else if (getData.palette === "6") {
+      colorCheck6.checked = true;
+    }
+    upgradeDataViewer();
   }
-  upgradeDataViewer();
 };
 
 const upgradeDataViewer = () => {
@@ -123,7 +122,7 @@ const upgradeDataViewer = () => {
   upgradeLinkedin();
   upgradeGithub();
   changeColor();
-  //upgradeImage();
+  upgradeImage();
 };
 
 //para cada input, cuando occurra su evento, se ejecuta la función que modificará su contenido en el visor
