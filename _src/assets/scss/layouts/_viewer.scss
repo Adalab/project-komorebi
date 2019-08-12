@@ -3,17 +3,35 @@
     min-width: 320px;
     height: 457px;
     //background: linear-gradient(#bfcdd0, #dde9ed);
-    //background: linear-gradient(0deg, rgba(169,214,178,1) 0%, rgba(201,242,210,1) 100%,);
-    //background-image: linear-gradient(to left top, #bfcdd0, #afd3d3, #a2d8ce, #9ddcc2, #a2deaf);
-    //background-image: radial-gradient(circle, #f9f4dc, #eaedcb, #d7e8be, #bfe3b4, #a2deaf);
+    /*background: linear-gradient(
+      0deg,
+      rgba(169, 214, 178, 1) 0%,
+      rgba(201, 242, 210, 1) 100%
+    );
+    background-image: linear-gradient(
+      to left top,
+      #bfcdd0,
+      #afd3d3,
+      #a2d8ce,
+      #9ddcc2,
+      #a2deaf
+    );*/
     background-image: radial-gradient(
+      circle,
+      #f9f4dc,
+      #eaedcb,
+      #d7e8be,
+      #bfe3b4,
+      #a2deaf
+    );
+    /*background-image: radial-gradient(
       circle,
       #f9f4dc,
       #e2edd9,
       #d1e3d8,
       #c5d9d6,
       #bfcdd0
-    );
+    );*/
     display: flex;
     justify-content: center;
     align-items: center;

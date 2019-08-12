@@ -1,10 +1,10 @@
-.workSpace{
+.workSpace {
   width: 100%;
   margin-bottom: 130px;
 }
 
 @media all and (min-width: $tabletSize) {
-  .workSpace{
+  .workSpace {
     margin-bottom: 0;
   }
   .section__mediasq {
@@ -37,7 +37,7 @@
 }
 
 @media all and (min-width: $desktopSize) {
-  .workSpace{
+  .workSpace {
     width: 329px;
   }
   .section__mediasq {
