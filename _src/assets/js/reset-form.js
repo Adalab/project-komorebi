@@ -71,5 +71,6 @@ function resetForm() {
   resetViewer();
   resetColor();
   localStorage.removeItem("userData");
+  location.reload(true);
 }
 resetBtn.addEventListener("click", resetForm);

@@ -63,13 +63,16 @@ function upgradeGithub() {
 let srcPhoto;
 let src;
 function upgradeImage() {
-  profileImage.style.backgroundImage = `url(${srcPhoto})`;
-  profilePreview.style.backgroundImage = `url(${srcPhoto})`;
+  if (srcPhoto === undefined) {
+    profileImage.style.backgroundImage = `url(./assets/images/natalie-portman.jpg)`;
+  } else {
+    profilePreview.style.backgroundImage = `url(${srcPhoto})`;
+    profileImage.style.backgroundImage = `url(${srcPhoto})`;
+  }
 }
 
 //Creamos una función para almacenar los datos introducidos en el localStorage.
 const handleFormData = () => {
-  debugger;
   console.log(palette);
   const data = {
     palette: palette,
@@ -147,6 +150,7 @@ const twitterLink = document.querySelector(".js-twitterLink");
 const shareMessage = document.querySelector(".js-shareMessage");
 
 function createCard(ev) {
+  debugger;
   ev.preventDefault();
   const userData = {
     palette: palette,
@@ -156,7 +160,7 @@ function createCard(ev) {
     phone: tel.value,
     linkedin: linkedin.value,
     github: github.value,
-    photo: fr.result
+    photo: srcPhoto
   };
   fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
     method: "POST",

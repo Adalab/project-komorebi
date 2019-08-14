@@ -258,6 +258,7 @@
     align-items: center;
     justify-content: center;
   }
+
   &__icon-style-color2 {
     width: 32px;
     height: 32px;
@@ -269,6 +270,7 @@
     align-items: center;
     justify-content: center;
   }
+
   &__icon-style-color3 {
     width: 32px;
     height: 32px;
@@ -312,6 +314,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__icon-style a {
+    color: $secondary-color;
+  }
+  &__icon-style-color2 a,
+  __icon-style a {
+    color: $maroon;
+  }
+  &__icon-style-color3 a {
+    color: $dark-green;
+  }
+  &__icon-style-color4 a {
+    color: $blue-jean;
+  }
+  &__icon-style-color5 a {
+    color: $dark-red;
+  }
+  &__icon-style-color6 a {
+    color: $dark-violet;
   }
 }
 
